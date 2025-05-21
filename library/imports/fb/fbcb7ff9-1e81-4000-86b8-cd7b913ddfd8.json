@@ -5,7 +5,7 @@
       "__id__": 1
     },
     "asyncLoadAssets": false,
-    "_name": "test"
+    "_name": "Test"
   },
   {
     "__type__": "cc.Scene",
