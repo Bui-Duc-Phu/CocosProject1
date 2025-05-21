@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 509.5625,
+                "height": 510,
                 "type": "panel",
                 "width": 295
               },
@@ -27,7 +27,7 @@
                 "children": [
                   "assets"
                 ],
-                "height": 508.4375,
+                "height": 508,
                 "type": "panel",
                 "width": 295
               }
@@ -43,7 +43,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 509.5625,
+                "height": 510,
                 "type": "panel",
                 "width": 998
               },
@@ -54,7 +54,7 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 508.4375,
+                "height": 508,
                 "type": "panel",
                 "width": 998
               }
@@ -115,9 +115,9 @@
     },
     "sprite-editor": {
       "x": 0,
-      "y": 38,
+      "y": 37,
       "width": 1728,
-      "height": 999
+      "height": 1080
     }
   }
 }

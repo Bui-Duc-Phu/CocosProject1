@@ -561,7 +561,7 @@
   },
   "e9eca624-9e61-4863-b571-91e105f5b6fa": {
     "asset": 1718273356000,
-    "meta": 1747647668269,
+    "meta": 1747800926203,
     "relativePath": "Images/Slider_Level_Slider_Border.png"
   },
   "37d5bcf9-9739-459d-9b7e-bb65678eba3c": {
@@ -621,13 +621,13 @@
   },
   "fbcb7ff9-1e81-4000-86b8-cd7b913ddfd8": {
     "asset": 1747638398573,
-    "meta": 1747798971738,
-    "relativePath": "Scene/Test.fire"
+    "meta": 1747809060844,
+    "relativePath": "Scene/test.fire"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747799979079,
-    "meta": 1747799979200,
-    "relativePath": "Scene/Main.fire"
+    "asset": 1747804493575,
+    "meta": 1747809057630,
+    "relativePath": "Scene/main.fire"
   },
   "85a545fb-19fd-449b-ba55-13aa76aaf4be": {
     "asset": 1747714963401,
@@ -763,5 +763,50 @@
     "asset": 1747796229590,
     "meta": 1747796216082,
     "relativePath": "Fonts"
+  },
+  "c3205e5a-349a-41b6-8ee7-8fa21b9dda6a": {
+    "asset": 1747803276526,
+    "meta": 1747803276539,
+    "relativePath": "Images/AutoAtlas.pac"
+  },
+  "c88c6ab7-b8a6-4345-851d-26bc0f657872": {
+    "asset": 1747804525812,
+    "meta": 1747804525819,
+    "relativePath": "CenterRight.prefab"
+  },
+  "f2ae538d-e8c9-4f11-8177-997be18a0c9b": {
+    "asset": 1747811030737,
+    "meta": 1747811030864,
+    "relativePath": "Scene/room.fire"
+  },
+  "f3f5ba6b-6fd7-42ca-b4ca-5b07c6d915e1": {
+    "asset": 1747809171272,
+    "meta": 1747809171283,
+    "relativePath": "scripts"
+  },
+  "319a1b47-01d9-4478-9c2b-7581a9f9066e": {
+    "asset": 1747810224376,
+    "meta": 1747810224374,
+    "relativePath": "Sound"
+  },
+  "2af540c2-0dd3-4afe-ac7b-61e4a34ef7f0": {
+    "asset": 1747810224320,
+    "meta": 1747810224415,
+    "relativePath": "Sound/click.mp3"
+  },
+  "85cb0413-3701-4114-b53c-78e2bad69514": {
+    "asset": 1747810224332,
+    "meta": 1747810224422,
+    "relativePath": "Sound/bgm.mp3"
+  },
+  "614c3054-5f4a-4b6d-88ae-05100bdcf428": {
+    "asset": 1747810224320,
+    "meta": 1747810224424,
+    "relativePath": "Sound/coin_counting.mp3"
+  },
+  "31f3a500-e6d0-4310-a286-cdf5cdaecab4": {
+    "asset": 1747811043558,
+    "meta": 1747811139970,
+    "relativePath": "scripts/SoundController.js"
   }
 }
