@@ -9550,7 +9550,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "play",
+    "_name": "Play",
     "_objFlags": 0,
     "_parent": {
       "__id__": 207
@@ -9630,7 +9630,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Button_Rectangle_01_Convex_Purple",
+    "_name": "Background",
     "_objFlags": 0,
     "_parent": {
       "__id__": 208
@@ -9720,7 +9720,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Button_Rectangle_05_Deco_White_DecoRight",
+    "_name": "iconRight",
     "_objFlags": 0,
     "_parent": {
       "__id__": 208
@@ -9810,8 +9810,8 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Button_Rectangle_05_Deco_White_DecoLeft",
-    "_objFlags": 0,
+    "_name": "iconLeft",
+    "_objFlags": 512,
     "_parent": {
       "__id__": 208
     },
@@ -9900,7 +9900,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Play",
+    "_name": "textPlay",
     "_objFlags": 0,
     "_parent": {
       "__id__": 208
@@ -10196,7 +10196,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "AnimFlash2",
+    "_name": "AnimFlash1",
     "_objFlags": 0,
     "_parent": {
       "__id__": 208
@@ -10258,7 +10258,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Flash2",
+    "_name": "Flash1",
     "_objFlags": 0,
     "_parent": {
       "__id__": 223
@@ -10384,7 +10384,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "AnimFlash3",
+    "_name": "AnimFlash2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 208
@@ -10446,7 +10446,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Flash3",
+    "_name": "Flash2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 228
