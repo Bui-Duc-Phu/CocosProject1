@@ -625,19 +625,19 @@
     "relativePath": "Scene/test.fire"
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747796676065,
-    "meta": 1747796676089,
+    "asset": 1747798284458,
+    "meta": 1747798284468,
     "relativePath": "Scene/main.fire"
   },
   "85a545fb-19fd-449b-ba55-13aa76aaf4be": {
     "asset": 1747714963401,
-    "meta": 1747796101194,
-    "relativePath": "Anims/vipText.anim"
+    "meta": 1747798244778,
+    "relativePath": "Anims/textVip.anim"
   },
   "14749829-ffcd-4a0a-81d7-8a6955e60248": {
     "asset": 1747731079867,
-    "meta": 1747796193836,
-    "relativePath": "Anims/Spl.anim"
+    "meta": 1747798014953,
+    "relativePath": "Anims/Flash.anim"
   },
   "6c32f0b3-efcd-471a-b2d1-3799f6dbbee1": {
     "asset": 1747796211055,
@@ -746,13 +746,13 @@
   },
   "3ebd50ec-afe5-4520-a125-57f625d1e918": {
     "asset": 1747731065279,
-    "meta": 1747796198224,
-    "relativePath": "Anims/Spl2.anim"
+    "meta": 1747798026234,
+    "relativePath": "Anims/Flash2.anim"
   },
   "083472b1-1d67-4a32-a51a-36e43a68bd72": {
     "asset": 1747730967450,
-    "meta": 1747796201124,
-    "relativePath": "Anims/Spl3.anim"
+    "meta": 1747798030143,
+    "relativePath": "Anims/Flash3.anim"
   },
   "d5db4d8a-e1b2-43df-9650-ac7f3fcd6d91": {
     "asset": 1747732386409,
