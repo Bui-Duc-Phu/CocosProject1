@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon_equip_hammer",
+    "texture": "24a1b0bf-ae2e-4a21-825f-7196a502b497",
+    "atlas": "",
+    "rect": [
+      14,
+      14,
+      101,
+      106
+    ],
+    "offset": [
+      0.5,
+      -3
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

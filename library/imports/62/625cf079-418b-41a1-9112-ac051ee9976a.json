@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BorderFrame_Square02_Bottom",
+    "texture": "8eebe34a-8833-4d5a-916f-f812f1195ea5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      89,
+      4
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      89,
+      4
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

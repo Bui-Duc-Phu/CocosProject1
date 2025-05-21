@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IconSet_Menu_01_Friend",
+    "texture": "39ed102a-2b86-4e97-a12b-11737bcd37a0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      49,
+      54
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      49,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

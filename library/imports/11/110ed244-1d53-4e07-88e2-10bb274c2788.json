@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "StageFrame_05_BgGlow",
+    "texture": "f6b3d187-150a-453e-8e06-621ef7512aef",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      203,
+      203
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      203,
+      203
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

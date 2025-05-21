@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "StageFrame_03_Single_Focus",
+    "texture": "0dabf79f-ea25-4078-8bcd-0c68568e9236",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      366,
+      326
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      366,
+      326
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

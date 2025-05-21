@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LineTextFrame_08_Bg",
+    "texture": "128203e1-d72d-4fa2-b030-3d8f2b13f2ef",
+    "atlas": "",
+    "rect": [
+      3,
+      0,
+      913,
+      96
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      919,
+      96
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

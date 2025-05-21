@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "IconSet_Menu_01_Community",
+    "texture": "8dc3bf09-ba38-4935-b690-3973dc9e01f9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      60,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      60,
+      58
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

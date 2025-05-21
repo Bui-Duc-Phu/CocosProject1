@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Button_Rectangle_05_Deco_White_DecoRight",
+    "texture": "093d4240-1dbf-42bd-aac3-e606a0e7deb1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      64,
+      170
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      64,
+      170
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Button_Rectangle_01_Convex_White_Gradient",
+    "texture": "fd6afbb9-f969-420c-ad3e-7f20d1e9b987",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      134,
+      47
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      134,
+      47
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

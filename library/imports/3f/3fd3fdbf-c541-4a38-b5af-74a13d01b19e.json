@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "equip_icon_gem_red",
+    "texture": "c016bd88-c3d0-4091-9797-11d6684e78b0",
+    "atlas": "",
+    "rect": [
+      16,
+      16,
+      96,
+      104
+    ],
+    "offset": [
+      0,
+      -4
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

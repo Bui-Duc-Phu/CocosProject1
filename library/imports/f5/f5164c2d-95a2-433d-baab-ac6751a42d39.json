@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "StageFrame_06_FocusFrontGradient",
+    "texture": "58bcb7d0-b34a-4009-876a-b15fbbe22eae",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      48,
+      96
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      48,
+      96
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

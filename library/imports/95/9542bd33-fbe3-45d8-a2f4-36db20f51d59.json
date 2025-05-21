@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icon_calendar",
+    "texture": "350b2cb6-331f-4c82-8874-04b724e72b3d",
+    "atlas": "",
+    "rect": [
+      21,
+      19,
+      86,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      128,
+      128
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

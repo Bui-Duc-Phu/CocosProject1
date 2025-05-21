@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BackGround_Sample_01_Title_2560",
+    "texture": "97388dfc-4c05-4129-9caa-936d3a47602e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2560,
+      1440
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2560,
+      1440
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
