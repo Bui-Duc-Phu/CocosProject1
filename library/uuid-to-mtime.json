@@ -420,7 +420,7 @@
     "relativePath": "model/primitives.fbx"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1747879132342,
+    "asset": 1747887017078,
     "meta": 1747636078576,
     "relativePath": "Scene"
   },
@@ -600,7 +600,7 @@
     "relativePath": "Anims"
   },
   "0978cb8c-a9fb-4da5-93fa-520603a5fd2d": {
-    "asset": 1747825602845,
+    "asset": 1747887017118,
     "meta": 1747721438180,
     "relativePath": "Images"
   },
@@ -670,17 +670,17 @@
     "relativePath": "Fonts"
   },
   "c88c6ab7-b8a6-4345-851d-26bc0f657872": {
-    "asset": 1747804525812,
-    "meta": 1747804525819,
+    "asset": 1747900581784,
+    "meta": 1747900581892,
     "relativePath": "Prefabs/CenterRight.prefab"
   },
   "f2ae538d-e8c9-4f11-8177-997be18a0c9b": {
-    "asset": 1747886997706,
-    "meta": 1747886997723,
+    "asset": 1747911004909,
+    "meta": 1747911004928,
     "relativePath": "Scene/Room.fire"
   },
   "f3f5ba6b-6fd7-42ca-b4ca-5b07c6d915e1": {
-    "asset": 1747809204395,
+    "asset": 1747881329679,
     "meta": 1747809171283,
     "relativePath": "Scripts"
   },
@@ -710,7 +710,7 @@
     "relativePath": "Images/Common/BackGround_Sample_06_Play_2048.png"
   },
   "1e9433a0-f72c-46e3-85e0-9ab54ef56d33": {
-    "asset": 1747822295565,
+    "asset": 1747880104561,
     "meta": 1747822295571,
     "relativePath": "Images/TopLeft"
   },
@@ -720,17 +720,17 @@
     "relativePath": "Prefabs"
   },
   "1b6bf18f-6ade-441f-8d3b-aa98a522883d": {
-    "asset": 1747822956819,
+    "asset": 1747880065319,
     "meta": 1747822920802,
     "relativePath": "Images/TopRight"
   },
   "bd8c3947-c108-4806-8be6-84ad4eb1c93d": {
-    "asset": 1747823094542,
+    "asset": 1747880283833,
     "meta": 1747823094553,
     "relativePath": "Images/BottonLeft"
   },
   "f3f9b6f5-924d-402d-b2c3-1072b26655d2": {
-    "asset": 1747823112424,
+    "asset": 1747880026695,
     "meta": 1747823112431,
     "relativePath": "Images/BottonRight"
   },
@@ -765,17 +765,17 @@
     "relativePath": "Images/TopLeft/Slider_Level_Slider_Border.png"
   },
   "ac9a452b-0615-4352-bb83-c97cd28ecce9": {
-    "asset": 1747879515118,
+    "asset": 1747880195533,
     "meta": 1747879515125,
     "relativePath": "Images/CenterLeft"
   },
   "9ec67abd-5f29-4d2a-81d9-da93c7f287a3": {
-    "asset": 1747879530842,
+    "asset": 1747880304042,
     "meta": 1747879530853,
     "relativePath": "Images/CenterRight"
   },
   "cd35f8e3-7a08-4615-be21-66afeef7e832": {
-    "asset": 1747879801023,
+    "asset": 1747880322922,
     "meta": 1747879801031,
     "relativePath": "Images/Common"
   },
@@ -784,29 +784,44 @@
     "meta": 1747880410101,
     "relativePath": "Scripts/RoomScene/Sounds"
   },
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747880495349,
-    "meta": 1747880527700,
-    "relativePath": "Scene/main.fire"
-  },
   "bb57311d-56f8-4a84-802b-4ee5743554f1": {
-    "asset": 1747881248931,
+    "asset": 1747885218584,
     "meta": 1747881248944,
     "relativePath": "Scripts/RoomScene"
   },
   "667f4ec2-4432-412c-8dc6-ea87a90f6bbb": {
-    "asset": 1747881436935,
+    "asset": 1747885624347,
     "meta": 1747881436937,
-    "relativePath": "Scripts/RoomScene/Lables"
+    "relativePath": "Scripts/RoomScene/Labels"
+  },
+  "d49f107e-0b0a-417a-965a-651312f54278": {
+    "asset": 1747906664937,
+    "meta": 1747906664948,
+    "relativePath": "Scripts/RoomScene/Buttons"
+  },
+  "a5f436e4-9d08-4bf6-80df-2103d6d3a0e8": {
+    "asset": 1747908183963,
+    "meta": 1747908183971,
+    "relativePath": "Scripts/RoomScene/ProgressBar"
+  },
+  "14f6cbcf-6198-4665-b839-5af5bf3e86ca": {
+    "asset": 1747908517492,
+    "meta": 1747908519823,
+    "relativePath": "Scripts/RoomScene/ProgressBar/ProgressBarController.js"
   },
   "19f5efe6-39ad-4db8-b276-441b489fdeeb": {
-    "asset": 1747885090668,
-    "meta": 1747885624853,
-    "relativePath": "Scripts/RoomScene/Lables/LableConfig.js"
+    "asset": 1747910090243,
+    "meta": 1747910093428,
+    "relativePath": "Scripts/RoomScene/Labels/LabelController.js"
   },
   "31f3a500-e6d0-4310-a286-cdf5cdaecab4": {
-    "asset": 1747886440849,
-    "meta": 1747886442750,
+    "asset": 1747910745125,
+    "meta": 1747910746503,
     "relativePath": "Scripts/RoomScene/Sounds/SoundController.js"
+  },
+  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
+    "asset": 1747910948110,
+    "meta": 1747910961690,
+    "relativePath": "Scene/main.fire"
   }
 }
