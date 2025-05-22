@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "3b461553-21ac-46d5-a287-49392f177ba2",
+  "uuid": "b3efcf8a-85a5-4575-9aaf-3df4d0c5fe61",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Button_Rectangle_05_Deco_White_DecoLeft": {
       "ver": "1.0.4",
-      "uuid": "e8346dc7-5ad8-4a81-bbe5-e552ac7bc03e",
-      "rawTextureUuid": "3b461553-21ac-46d5-a287-49392f177ba2",
+      "uuid": "6fdac2f6-7393-4c7d-8b33-db4e8e012505",
+      "rawTextureUuid": "b3efcf8a-85a5-4575-9aaf-3df4d0c5fe61",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

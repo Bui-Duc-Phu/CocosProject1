@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "7dc2109f-7c6a-47a8-953e-610ee6c2ce10",
+  "uuid": "158e823c-2436-4030-9e33-a2016f63226d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "BasicFrame_Diamond_80_Glow": {
       "ver": "1.0.4",
-      "uuid": "a16d8113-d915-4529-ad73-598edbc5f611",
-      "rawTextureUuid": "7dc2109f-7c6a-47a8-953e-610ee6c2ce10",
+      "uuid": "7c868eb6-e764-4e88-921f-4751f770d39f",
+      "rawTextureUuid": "158e823c-2436-4030-9e33-a2016f63226d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

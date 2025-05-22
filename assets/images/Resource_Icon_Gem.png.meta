@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "d96201e7-fd44-4f39-8ab4-cf6c343e8a71",
+  "uuid": "5257723d-eac9-4800-9f9c-fb70a89b864d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Resource_Icon_Gem": {
       "ver": "1.0.4",
-      "uuid": "f2f30029-ed7a-4a42-b71b-f4a97300bb82",
-      "rawTextureUuid": "d96201e7-fd44-4f39-8ab4-cf6c343e8a71",
+      "uuid": "e035073b-5422-455d-8548-63377587c803",
+      "rawTextureUuid": "5257723d-eac9-4800-9f9c-fb70a89b864d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "fd6afbb9-f969-420c-ad3e-7f20d1e9b987",
+  "uuid": "98460036-3b4d-49ea-95aa-3b03f6b6edcd",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Button_Rectangle_01_Convex_White_Gradient": {
       "ver": "1.0.4",
-      "uuid": "5de5f33c-6931-4399-bea6-b916521ba229",
-      "rawTextureUuid": "fd6afbb9-f969-420c-ad3e-7f20d1e9b987",
+      "uuid": "5d274a2d-9b49-4839-ae6c-9dcf53072d35",
+      "rawTextureUuid": "98460036-3b4d-49ea-95aa-3b03f6b6edcd",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

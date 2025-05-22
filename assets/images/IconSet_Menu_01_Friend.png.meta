@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "39ed102a-2b86-4e97-a12b-11737bcd37a0",
+  "uuid": "29dcca6e-1bdf-4643-ad44-2673dee59a7d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "IconSet_Menu_01_Friend": {
       "ver": "1.0.4",
-      "uuid": "ad0f7eb2-d417-4ae0-be95-cd5c75bed45a",
-      "rawTextureUuid": "39ed102a-2b86-4e97-a12b-11737bcd37a0",
+      "uuid": "d49bafea-9a2c-4f30-a4a3-2817387e4377",
+      "rawTextureUuid": "29dcca6e-1bdf-4643-ad44-2673dee59a7d",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

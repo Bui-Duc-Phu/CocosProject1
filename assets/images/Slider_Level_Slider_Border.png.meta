@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "e9eca624-9e61-4863-b571-91e105f5b6fa",
+  "uuid": "31e8ac30-b403-4cb0-a486-04c32a69e2ca",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Slider_Level_Slider_Border": {
       "ver": "1.0.4",
-      "uuid": "9468789b-ea40-4164-9c47-783387703bcb",
-      "rawTextureUuid": "e9eca624-9e61-4863-b571-91e105f5b6fa",
+      "uuid": "d8d06392-107b-474b-9381-307f2455bca4",
+      "rawTextureUuid": "31e8ac30-b403-4cb0-a486-04c32a69e2ca",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "24a1b0bf-ae2e-4a21-825f-7196a502b497",
+  "uuid": "4b04a61e-eed1-43dd-aa31-64d84f193f12",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "icon_equip_hammer": {
       "ver": "1.0.4",
-      "uuid": "f5f181bf-c674-4955-bddf-41936fa7967f",
-      "rawTextureUuid": "24a1b0bf-ae2e-4a21-825f-7196a502b497",
+      "uuid": "1dff27ee-8c0c-4301-ba65-fea520297e6b",
+      "rawTextureUuid": "4b04a61e-eed1-43dd-aa31-64d84f193f12",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

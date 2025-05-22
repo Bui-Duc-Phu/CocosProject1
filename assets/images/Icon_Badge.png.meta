@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "80bde04f-1949-44cf-8f27-724882f75836",
+  "uuid": "b8cc5055-50a9-4af0-806d-efdc63c70c29",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "Icon_Badge": {
       "ver": "1.0.4",
-      "uuid": "0dc5deec-92dd-4ffc-96c4-5779babe9849",
-      "rawTextureUuid": "80bde04f-1949-44cf-8f27-724882f75836",
+      "uuid": "2975ece6-9fc3-4043-a02c-4218bd033cdc",
+      "rawTextureUuid": "b8cc5055-50a9-4af0-806d-efdc63c70c29",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -6,9 +6,9 @@
       "url": "app://editor/index.html",
       "windowType": "dockable",
       "x": 0,
-      "y": 37,
+      "y": 38,
       "width": 1728,
-      "height": 1080,
+      "height": 1003,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 509,
+                "height": 457.390625,
                 "type": "panel",
                 "width": 419
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 509,
+                "height": 455.609375,
                 "type": "panel",
                 "width": 419
               }
             ],
-            "height": 1020,
+            "height": 915,
             "type": "dock-v",
             "width": 419
           },
@@ -43,35 +43,36 @@
                 "children": [
                   "scene"
                 ],
-                "height": 509,
+                "height": 457.390625,
                 "type": "panel",
-                "width": 949
+                "width": 936
               },
               {
-                "active": 1,
+                "active": 0,
                 "children": [
                   "console",
                   "timeline",
                   "game-window"
                 ],
-                "height": 509,
+                "height": 455.609375,
                 "type": "panel",
-                "width": 949
+                "width": 936
               }
             ],
-            "height": 1020,
+            "height": 915,
             "type": "dock-v",
-            "width": 949
+            "width": 936
           },
           {
             "active": 0,
             "children": [
               "inspector",
-              "cocos-services"
+              "cocos-services",
+              "node-library"
             ],
-            "height": 1020,
+            "height": 915,
             "type": "panel",
-            "width": 356
+            "width": 369
           }
         ],
         "type": "dock-h"
@@ -84,6 +85,7 @@
         "game-window",
         "inspector",
         "cocos-services",
+        "node-library",
         "scene"
       ]
     }
@@ -102,10 +104,10 @@
       "height": 1080
     },
     "node-library": {
-      "x": 0,
-      "y": 37,
+      "x": 1032,
+      "y": 108,
       "width": 1728,
-      "height": 1080
+      "height": 1003
     },
     "builder": {
       "x": 0,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "931563c5-4bad-4128-8112-4985a6f0b48e",
+  "uuid": "a7cda944-1e20-4eb2-bd01-1898ac87ca03",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "BorderFrame_Square02_BgGlow": {
       "ver": "1.0.4",
-      "uuid": "f84b692d-b9ca-4ea1-a910-89f7e9e9bf93",
-      "rawTextureUuid": "931563c5-4bad-4128-8112-4985a6f0b48e",
+      "uuid": "bce4684c-e6ba-404e-b4eb-28336dd052b0",
+      "rawTextureUuid": "a7cda944-1e20-4eb2-bd01-1898ac87ca03",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

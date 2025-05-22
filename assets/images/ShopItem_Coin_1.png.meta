@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "57ae2d91-6599-4ba0-a110-36b8194b3d5c",
+  "uuid": "57d02fe2-2fe8-424c-ba55-46972e251edd",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "ShopItem_Coin_1": {
       "ver": "1.0.4",
-      "uuid": "e28f9e38-5cfa-4de9-9b3e-0eb49b57092f",
-      "rawTextureUuid": "57ae2d91-6599-4ba0-a110-36b8194b3d5c",
+      "uuid": "83f9aba9-7ae3-435a-a1b4-fd68576f7aab",
+      "rawTextureUuid": "57d02fe2-2fe8-424c-ba55-46972e251edd",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
