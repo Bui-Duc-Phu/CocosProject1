@@ -676,8 +676,9 @@
   },
   "f2ae538d-e8c9-4f11-8177-997be18a0c9b": {
 
-    "asset": 1747910895852,
-    "meta": 1747910895969,
+    "asset": 1747911545930,
+    "meta": 1747911545941,
+
     "relativePath": "Scene/Room.fire"
   },
   "f3f5ba6b-6fd7-42ca-b4ca-5b07c6d915e1": {
@@ -796,11 +797,6 @@
     "relativePath": "Scripts/RoomScene/Labels"
   },
 
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747900730274,
-    "meta": 1747900730291,
-    "relativePath": "Scene/main.fire"
-  },
 
   "d49f107e-0b0a-417a-965a-651312f54278": {
     "asset": 1747906664937,
@@ -829,8 +825,8 @@
 
   },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747911657602,
-    "meta": 1747911657624,
+    "asset": 1747911548387,
+    "meta": 1747911548469,
     "relativePath": "Scene/main.fire"
 
   }
