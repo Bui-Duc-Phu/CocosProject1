@@ -6,9 +6,9 @@
       "url": "app://editor/index.html",
       "windowType": "dockable",
       "x": 0,
-      "y": 38,
+      "y": 37,
       "width": 1728,
-      "height": 1003,
+      "height": 1080,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 456.5,
+                "height": 510,
                 "type": "panel",
                 "width": 419
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 456.5,
+                "height": 508,
                 "type": "panel",
                 "width": 419
               }
             ],
-            "height": 915,
+            "height": 1020,
             "type": "dock-v",
             "width": 419
           },
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 456.5,
+                "height": 510,
                 "type": "panel",
-                "width": 949
+                "width": 936
               },
               {
                 "active": 0,
@@ -54,24 +54,25 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 456.5,
+                "height": 508,
                 "type": "panel",
-                "width": 949
+                "width": 936
               }
             ],
-            "height": 915,
+            "height": 1020,
             "type": "dock-v",
-            "width": 949
+            "width": 936
           },
           {
             "active": 0,
             "children": [
               "inspector",
-              "cocos-services"
+              "cocos-services",
+              "node-library"
             ],
-            "height": 915,
+            "height": 1020,
             "type": "panel",
-            "width": 356
+            "width": 369
           }
         ],
         "type": "dock-h"
@@ -84,7 +85,8 @@
         "game-window",
         "inspector",
         "cocos-services",
-        "scene"
+        "scene",
+        "node-library"
       ]
     }
   },
@@ -102,10 +104,10 @@
       "height": 1080
     },
     "node-library": {
-      "x": 0,
-      "y": 37,
+      "x": 1032,
+      "y": 108,
       "width": 1728,
-      "height": 1080
+      "height": 1003
     },
     "builder": {
       "x": 0,
