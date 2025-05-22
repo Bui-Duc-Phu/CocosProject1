@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "Main",
+    "_name": "main",
     "_objFlags": 0,
     "_native": "",
     "scene": {
@@ -10124,7 +10124,7 @@
   {
     "__type__": "cc.Node",
     "_name": "IconLeft",
-    "_objFlags": 512,
+    "_objFlags": 0,
     "_parent": {
       "__id__": 223
     },
