@@ -675,10 +675,8 @@
     "relativePath": "Prefabs/CenterRight.prefab"
   },
   "f2ae538d-e8c9-4f11-8177-997be18a0c9b": {
-
-    "asset": 1747911545930,
-    "meta": 1747911545941,
-
+    "asset": 1747966162154,
+    "meta": 1747966162191,
     "relativePath": "Scene/Room.fire"
   },
   "f3f5ba6b-6fd7-42ca-b4ca-5b07c6d915e1": {
@@ -796,8 +794,6 @@
     "meta": 1747881436937,
     "relativePath": "Scripts/RoomScene/Labels"
   },
-
-
   "d49f107e-0b0a-417a-965a-651312f54278": {
     "asset": 1747906664937,
     "meta": 1747906664948,
@@ -818,16 +814,14 @@
     "meta": 1747910093428,
     "relativePath": "Scripts/RoomScene/Labels/LabelController.js"
   },
-  "31f3a500-e6d0-4310-a286-cdf5cdaecab4": {
-    "asset": 1747910745125,
-    "meta": 1747910746503,
-    "relativePath": "Scripts/RoomScene/Sounds/SoundController.js"
-
-  },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747911548387,
-    "meta": 1747911548469,
+    "asset": 1747912325864,
+    "meta": 1747912325884,
     "relativePath": "Scene/main.fire"
-
+  },
+  "31f3a500-e6d0-4310-a286-cdf5cdaecab4": {
+    "asset": 1747966277604,
+    "meta": 1747966286543,
+    "relativePath": "Scripts/RoomScene/Sounds/SoundController.js"
   }
 }
