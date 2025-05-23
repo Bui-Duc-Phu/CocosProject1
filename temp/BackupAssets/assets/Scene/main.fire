@@ -3116,9 +3116,9 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 5.851,
-      "y": 1.735,
-      "z": 0
+      "x": 7.586,
+      "y": 0,
+      "z": 400.10374
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -10119,7 +10119,7 @@
   {
     "__type__": "cc.Node",
     "_name": "IconLeft",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 223
     },
