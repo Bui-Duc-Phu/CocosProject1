@@ -675,8 +675,10 @@
     "relativePath": "Prefabs/CenterRight.prefab"
   },
   "f2ae538d-e8c9-4f11-8177-997be18a0c9b": {
-    "asset": 1747966162154,
-    "meta": 1747966162191,
+
+    "asset": 1747967161738,
+    "meta": 1747967161757,
+
     "relativePath": "Scene/Room.fire"
   },
   "f3f5ba6b-6fd7-42ca-b4ca-5b07c6d915e1": {
@@ -794,34 +796,22 @@
     "meta": 1747881436937,
     "relativePath": "Scripts/RoomScene/Labels"
   },
-  "d49f107e-0b0a-417a-965a-651312f54278": {
-    "asset": 1747906664937,
-    "meta": 1747906664948,
-    "relativePath": "Scripts/RoomScene/Buttons"
-  },
-  "a5f436e4-9d08-4bf6-80df-2103d6d3a0e8": {
-    "asset": 1747908183963,
-    "meta": 1747908183971,
-    "relativePath": "Scripts/RoomScene/ProgressBar"
-  },
-  "14f6cbcf-6198-4665-b839-5af5bf3e86ca": {
-    "asset": 1747908517492,
-    "meta": 1747908519823,
-    "relativePath": "Scripts/RoomScene/ProgressBar/ProgressBarController.js"
-  },
+
   "19f5efe6-39ad-4db8-b276-441b489fdeeb": {
     "asset": 1747910090243,
     "meta": 1747910093428,
     "relativePath": "Scripts/RoomScene/Labels/LabelController.js"
   },
-  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
-    "asset": 1747912325864,
-    "meta": 1747912325884,
-    "relativePath": "Scene/main.fire"
-  },
+
   "31f3a500-e6d0-4310-a286-cdf5cdaecab4": {
-    "asset": 1747966277604,
-    "meta": 1747966286543,
+    "asset": 1747967002301,
+    "meta": 1747967161678,
     "relativePath": "Scripts/RoomScene/Sounds/SoundController.js"
+  },
+  "2d2f792f-a40c-49bb-a189-ed176a246e49": {
+    "asset": 1747967153024,
+    "meta": 1747967161680,
+    "relativePath": "Scene/main.fire"
+
   }
 }
