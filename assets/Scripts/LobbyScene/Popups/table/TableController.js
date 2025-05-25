@@ -1,41 +1,74 @@
-// Learn cc.Class:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/class.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://docs.cocos2d-x.org/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        itemPrefab: cc.Prefab,
+        container: {
+            default: null,
+            type: cc.Node,
+            tooltip: "Container node with Layout component"
+        },
+        colors: {
+            default: null,
+            visible: true
+        }
     },
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start () {
-
+    onLoad() {
+        this.colors = {
+            TOP_1: "#A80808",
+            TOP_2: "#C9DA05",
+            TOP_3: "#330CFC",
+            OTHERS: "#4C155E"
+        };
+        this.layoutConfig = {
+            spacing: 10,
+            type: 1 
+        };
+        this.playerData = [
+            { name: "Faker", Champion: "Leblanc", rank: "Thách Đấu" },
+            { name: "ShowMaker", Champion: "Sylas", rank: "Cao Thủ" },
+            { name: "Chovy", Champion: "Viktor", rank: "Cao Thủ" },
+            { name: "Keria", Champion: "Thresh", rank: "Cao Thủ" },
+            { name: "Gumayusi", Champion: "Jinx", rank: "Cao Thủ" }
+        ];
     },
-
-    // update (dt) {},
+    start() {
+        this._initLayout();
+        this.populateList(this.playerData);
+    },
+    populateList(dataList) {
+        this.container.removeAllChildren();
+        dataList.forEach((data, index) => {
+            const itemNode = this._createListItem(data, index);
+            this.container.addChild(itemNode);
+        });
+        const layout = this.container.getComponent(cc.Layout);
+        if (layout) {
+            layout.updateLayout();
+        }
+    },
+    _initLayout() {
+        let layout = this.container.getComponent(cc.Layout);
+        if (!layout) {
+            layout = this.container.addComponent(cc.Layout);
+        }
+        layout.type = cc.Layout.Type.VERTICAL;
+        layout.spacingY = this.layoutConfig.spacing;
+        layout.resizeMode = cc.Layout.ResizeMode.CONTAINER;
+    },
+    _getColorByRank(index) {
+        switch (index) {
+            case 0: return this.colors.TOP_1;
+            case 1: return this.colors.TOP_2;
+            case 2: return this.colors.TOP_3;
+            default: return this.colors.OTHERS;
+        }
+    },
+    _createListItem(data, index) {
+        const itemNode = cc.instantiate(this.itemPrefab);
+        const itemScript = itemNode.getComponent("ItemCell");
+        const color = this._getColorByRank(index);
+        itemScript.updateData(data, color, index);
+        return itemNode;
+    }
 });

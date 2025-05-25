@@ -1,45 +1,32 @@
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        PopupRank: require('./PopupRank'),
-        PopupSetting: require('./PopupSetting'),
+        popupRankNode: cc.Node,
+        popupSettingNode: cc.Node
     },
+    onLoad() {
+        this.popupRank = this.popupRankNode.getComponent('PopupRank');
+        this.popupSetting = this.popupSettingNode.getComponent('PopupSetting');
 
+        console.log('popupSettingNode:', this.popupSettingNode);
+        console.log('popupSetting:', this.popupSetting);
+
+    },
+    onStart() {
+        this.popupRank.hide();
+        this.popupSetting.hide();
+    },
     showPopupRank() {
-        let data = {}
-        this._showPopup('PopupRank',data);
+        this.popupRank.show();
     },
     hidePopupRank() {
-        this._hidePopup('PopupRank');
+        this.popupRank.hide();
     },
     showPopupSetting() {
-        let data = {}
-        this._showPopup('PopupSetting',data);
+        this.popupSetting.show();
     },
     hidePopupSetting() {
-        this._hidePopup('PopupSetting');
+        this.popupSetting.hide();
     },
-
-    _showPopup(popupName, data) {
-        const popup = this[popupName];
-        if (popup) {
-            popup.show(data);
-        }
-    },
-    _hidePopup(popupName) {
-        const popup = this[popupName];
-        if (popup) {
-            popup.hide();
-        }
-    },
-
-
-
-
-
-
-
-
 });
