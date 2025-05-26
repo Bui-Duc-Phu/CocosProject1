@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "3d2962bb-31d9-49fd-aad0-e0442a250851",
+  "uuid": "d3e3973c-50af-4c92-bd4e-e35251caf379",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -9,10 +9,10 @@
   "packable": true,
   "platformSettings": {},
   "subMetas": {
-    "ItemFrame_02_Bg_White_Border": {
+    "CardFrame_01_BorderGray_DecoLeft": {
       "ver": "1.0.4",
-      "uuid": "21c2e88b-ad2a-4532-a790-2b5318ad83bd",
-      "rawTextureUuid": "3d2962bb-31d9-49fd-aad0-e0442a250851",
+      "uuid": "1b5ce91c-63be-4681-b06c-1af8a683d6f6",
+      "rawTextureUuid": "d3e3973c-50af-4c92-bd4e-e35251caf379",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -20,14 +20,14 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 130,
-      "height": 130,
-      "rawWidth": 130,
-      "rawHeight": 130,
-      "borderTop": 47,
-      "borderBottom": 54,
-      "borderLeft": 52,
-      "borderRight": 61,
+      "width": 113,
+      "height": 112,
+      "rawWidth": 113,
+      "rawHeight": 112,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
       "subMetas": {}
     }
   }
