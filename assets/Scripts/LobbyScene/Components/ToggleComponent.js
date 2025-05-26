@@ -35,11 +35,7 @@ cc.Class({
         this.isOn = !this.isOn;
         this.updateToggleState(this.isOn);
         if (this.audioController) {
-            if (this.isOn) {
-                this.audioController.setBGM(this.isOn);
-            } else {
-                this.audioController.setBGM(this.isOn);
-            }
+            this.audioController.setBGM(this.isOn);
         }
     },
     updateToggleState(isOn) {

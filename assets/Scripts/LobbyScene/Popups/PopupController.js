@@ -8,10 +8,6 @@ cc.Class({
     onLoad() {
         this.popupRank = this.popupRankNode.getComponent('PopupRank');
         this.popupSetting = this.popupSettingNode.getComponent('PopupSetting');
-
-        console.log('popupSettingNode:', this.popupSettingNode);
-        console.log('popupSetting:', this.popupSetting);
-
     },
     onStart() {
         this.popupRank.hide();
