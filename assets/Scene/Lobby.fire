@@ -3194,7 +3194,6 @@
     "container": {
       "__id__": 29
     },
-    "colors": null,
     "_id": "e88mAxFSpIpbdRVQ2PBBJh"
   },
   {
@@ -5920,9 +5919,6 @@
       "__id__": 168
     },
     "_enabled": true,
-    "PopupController": {
-      "__id__": 9
-    },
     "_id": "05VbCv/j9FPrys2RgR6vQr"
   },
   {
