@@ -1,3 +1,5 @@
+const mEmitter = require('mEmitter');
+const EventDriver = require('EventDriver');
 cc.Class({
     extends: cc.Component,
 
@@ -22,7 +24,16 @@ cc.Class({
                 this._updateSliderValue();
             }
         },
-        audioController:require('../Sounds/AudioController'),
+        background: {
+            default: null,
+            type: cc.Sprite,
+            tooltip: 'Background node'
+        },
+        backgroundForce: {
+            default: null,
+            type: cc.Sprite,
+            tooltip: 'Background force'
+        },
     },
     onLoad() {
         this.initSlider();
@@ -31,17 +42,20 @@ cc.Class({
         if (this.slider) {
             this.slider.interactable = true;
             this.slider.progress = (this.currentValue - this.minValue) / (this.maxValue - this.minValue);
+            this.backgroundForce.node.width = this.background.node.width * this.slider.progress;
             this.slider.node.on('slide', this.onSliderChanged, this);
         }
     },
-    onSliderChanged(slider) {
-        if (!this.slider) return;
+    onSliderChanged(slider){
         this.currentValue = this.minValue + (this.maxValue - this.minValue) * this.slider.progress;
         this._updateSliderValue();
-        this.audioController.setSystemVolume(this.currentValue/100);
+        mEmitter.instance.emit(EventDriver.SET_VOLUME_SYSTEM, this.currentValue/100);
     },
     _updateSliderValue() {
-        if (!this.slider) return;
-        this.slider.progress = (this.currentValue - this.minValue) / (this.maxValue - this.minValue);
+        this.slider.progress =(this.currentValue - this.minValue) / (this.maxValue - this.minValue);
+        this.backgroundForce.node.width = this.background.node.width * this.slider.progress;
     },
+    onDestroy() {
+        this.slider.node.off('slide', this.onSliderChanged, this);
+    }
 });

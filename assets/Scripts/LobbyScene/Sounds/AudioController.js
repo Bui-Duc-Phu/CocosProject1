@@ -1,3 +1,6 @@
+const mEmitter = require('mEmitter');
+const EventDriver = require('EventDriver');
+
 cc.Class({
     extends: cc.Component,
 
@@ -22,7 +25,7 @@ cc.Class({
     onLoad () {
         this._localVariable();
         this._playSoundBGM();
-      
+        this._registerEvent();
     },
     setBGM(isOn) {
         if (this.bgmId == null) return;
@@ -38,6 +41,11 @@ cc.Class({
     },
     onSoundClick() {
         this._playSoundClick();
+    },
+    _registerEvent(){
+        mEmitter.instance.registerEvent(EventDriver.BGM_TOGGLE, this.setBGM.bind(this));
+        mEmitter.instance.registerEvent(EventDriver.SET_VOLUME_SYSTEM, this.setSystemVolume.bind(this));
+        mEmitter.instance.registerEvent(EventDriver.ON_CLICK_SOUND, this.onSoundClick.bind(this));
     },
     _localVariable() {
         this.bgmId = null;

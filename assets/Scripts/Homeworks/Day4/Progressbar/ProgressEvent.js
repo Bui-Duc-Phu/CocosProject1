@@ -1,5 +1,5 @@
 const EventEmitter = require('events');
-class mEmitter {
+class ProgressEvent {
     constructor() {
         this._emiter = new EventEmitter();
         this._emiter.setMaxListeners(100);
@@ -20,10 +20,11 @@ class mEmitter {
     destroy() {
         this._emiter.removeAllListeners();
         this._emiter = null;
-        mEmitter.instance = null;
+        ProgressEvent.instance = null;
     }
 }
-
-mEmitter.instance = new mEmitter();
-
-module.exports = mEmitter;
+ProgressEvent.instance = null;
+if(!ProgressEvent.instance){
+    ProgressEvent.instance = new ProgressEvent();
+}
+module.exports = ProgressEvent;

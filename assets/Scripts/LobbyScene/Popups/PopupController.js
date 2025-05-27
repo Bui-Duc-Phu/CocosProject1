@@ -1,3 +1,5 @@
+const mEmitter = require('mEmitter');
+const EventDriver = require('EventDriver');
 cc.Class({
     extends: cc.Component,
 
@@ -6,8 +8,8 @@ cc.Class({
         popupSettingNode: cc.Node
     },
     onLoad() {
-        this.popupRank = this.popupRankNode.getComponent('PopupRank');
-        this.popupSetting = this.popupSettingNode.getComponent('PopupSetting');
+        this._initValue();
+        this._registerEvent();
     },
     onStart() {
         this.popupRank.hide();
@@ -16,13 +18,19 @@ cc.Class({
     showPopupRank() {
         this.popupRank.show();
     },
-    hidePopupRank() {
-        this.popupRank.hide();
-    },
     showPopupSetting() {
         this.popupSetting.show();
     },
-    hidePopupSetting() {
-        this.popupSetting.hide();
+    _initValue(){
+        this.popupRank = this.popupRankNode.getComponent('PopupRank');
+        this.popupSetting = this.popupSettingNode.getComponent('PopupSetting');
     },
+    _registerEvent(){
+        mEmitter.instance.registerEvent(EventDriver.SHOW_POPUP_RANK, this.showPopupRank.bind(this));
+        mEmitter.instance.registerEvent(EventDriver.SHOW_POPUP_SETTING, this.showPopupSetting.bind(this));
+    },
+    onDestroy() {
+        mEmitter.instance.removeEvent(EventDriver.SHOW_POPUP_RANK, this.showPopupRank.bind(this));
+        mEmitter.instance.removeEvent(EventDriver.SHOW_POPUP_SETTING, this.showPopupSetting.bind(this));
+    }
 });
