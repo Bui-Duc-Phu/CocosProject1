@@ -1,3 +1,6 @@
+const mEmitter = require('mEmitter');
+const EventDriver = require('EventDriver');
+
 cc.Class({
     extends: cc.Component,
 
@@ -24,30 +27,36 @@ cc.Class({
             default: true,
             visible: false
         },
-        audioController:require('../Sounds/AudioController'),
-         
+        background: {
+            default: null,
+            type: cc.Sprite,
+            tooltip: 'Background node'
+        },
     },
     onLoad() {
-        this.updateToggleState(this.isOn);
-        this.node.on(cc.Node.EventType.TOUCH_END, this.onToggleClick, this);
+        this._initValue();
+        this._updateToggleState(this.isOn);
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onToggleClick, this);
     },
     onToggleClick() {
         this.isOn = !this.isOn;
-        this.updateToggleState(this.isOn);
-        if (this.audioController) {
-            this.audioController.setBGM(this.isOn);
-        }
+        this._updateToggleState(this.isOn);
+        mEmitter.instance.emit(EventDriver.BGM_TOGGLE, this.isOn);
     },
-    updateToggleState(isOn) {
-        if (this.slider) {
-            this.slider.progress = isOn ?  this.maxPosition : this.minPosition;
-        }
+    _initValue(){
+        this.colorOn = new cc.Color(13,223,89,255);
+        this.colorOff = new cc.Color(255,255,255,255);
+    },
+    _updateToggleState(isOn) {
+        this.slider.progress = isOn ?  this.maxPosition : this.minPosition;
+        this.background.node.color = isOn ? this.colorOn : this.colorOff;
         if (this.targetNode) {
             const alpha = isOn ? 255 : 150;
             this.targetNode.opacity = alpha;
         }
     },
     onDestroy() {
-        this.node.off(cc.Node.EventType.TOUCH_END, this.onToggleClick, this);
+        this.node.off(cc.Node.EventType.TOUCH_START, this.onToggleClick, this);
     }
 });
+

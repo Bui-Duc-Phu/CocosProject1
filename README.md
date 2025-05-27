@@ -105,3 +105,36 @@ Auto Atlas là tính năng giúp gom nhiều hình nhỏ (SpriteFrame) thành m�
 **Khi chạy game thực tế**
 - Engine chỉ tải một ảnh lớn duy nhất (atlas image).  
 - Mỗi sprite được "cắt ra" bằng tọa độ UV để hiển thị đúng phần cần thiết trên atlas.
+
+
+## Size Mode của Sprite
+
+Size Mode là thuộc tính quyết định cách hiển thị kích thước của sprite trong game, gồm 2 chế độ chính:
+
+ **Trimmed Mode**
+- Hiển thị sprite dựa trên kích thước thực tế của nội dung hình ảnh
+- Tự động loại bỏ các vùng trong suốt (transparent) xung quanh
+- Phù hợp khi:
+  + Cần hiển thị sprite với kích thước chính xác của nội dung
+  + Làm việc với UI elements cần căn chỉnh chính xác
+  + Cần tối ưu không gian hiển thị
+  + Làm việc với các sprite có nhiều vùng trong suốt
+
+**Raw Mode**
+- Hiển thị sprite với kích thước gốc của texture
+- Giữ nguyên tất cả các vùng trong suốt xung quanh
+- Phù hợp khi:
+  + Cần giữ nguyên kích thước gốc của texture
+  + Làm việc với sprite sheet hoặc atlas
+  + Cần căn chỉnh nhiều sprite với nhau
+  + Làm việc với các sprite có kích thước cố định
+
+**So sánh hai chế độ**
+
+| Tiêu chí | Trimmed Mode | Raw Mode |
+|----------|--------------|-----------|
+| Kích thước hiển thị | Kích thước thực tế của nội dung | Kích thước gốc của texture |
+| Vùng trong suốt | Tự động loại bỏ | Giữ nguyên |
+| Căn chỉnh | Chính xác theo nội dung | Theo kích thước gốc |
+| Tối ưu không gian | Tốt hơn | Kém hơn |
+| Phù hợp với | UI elements, sprite riêng lẻ | Sprite sheet, atlas, sprite có kích thước cố định |

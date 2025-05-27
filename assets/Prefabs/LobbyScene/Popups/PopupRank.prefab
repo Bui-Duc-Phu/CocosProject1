@@ -41,13 +41,10 @@
       },
       {
         "__id__": 81
-      },
-      {
-        "__id__": 82
       }
     ],
     "_prefab": {
-      "__id__": 83
+      "__id__": 82
     },
     "_opacity": 255,
     "_color": {
@@ -2575,6 +2572,9 @@
       },
       {
         "__id__": 75
+      },
+      {
+        "__id__": 77
       }
     ],
     "_prefab": {
@@ -2667,9 +2667,6 @@
     "clickEvents": [
       {
         "__id__": 76
-      },
-      {
-        "__id__": 77
       }
     ],
     "_N$interactable": true,
@@ -2740,14 +2737,15 @@
     "customEventData": ""
   },
   {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 1
+    "__type__": "e3f7d+tJ/FHDY4w9Qql/NQo",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 73
     },
-    "component": "",
-    "_componentId": "0fa81bXi61G5oichIFuoog0",
-    "handler": "onSoundClick",
-    "customEventData": ""
+    "_enabled": true,
+    "onTouchEnd": false,
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -2817,17 +2815,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "_id": ""
-  },
-  {
-    "__type__": "0fa81bXi61G5oichIFuoog0",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "audioController": null,
     "_id": ""
   },
   {
