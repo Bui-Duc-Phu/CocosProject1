@@ -16,10 +16,9 @@ cc.Class({
         SprineEvent.instance.registerEvent("RUN_ANIM", this.runAnim.bind(this));
     },
     runAnim(animName) {
-        this.spine.clearTracks(); 
         this.spine.timeScale = this.runSpeed;
-        this.spine.setAnimation(0, 'default', false);
-        this.spine.addAnimation(0, animName, true);
+        this.spine.setAnimation(0, animName, true);
+  
     },
     getAllAnimNames(){
             const animList = this.spine.skeletonData._skeletonJson.animations
