@@ -13,6 +13,11 @@ const EventDriver = {
         UPDATE_CURRENT_PROGRESS: 'UPDATE_CURRENT_PROGRESS',
         DOWLOADING_PROGRESS: 'DOWLOADING_PROGRESS',
     },
+    CHARACTER :{
+        ON_HIT: 'ON_HIT',
+    }
+
+
  
 };
 module.exports = EventDriver;
