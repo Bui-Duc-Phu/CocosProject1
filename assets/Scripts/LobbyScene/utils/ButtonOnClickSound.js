@@ -25,11 +25,5 @@ cc.Class({
         } 
         this.button.node.on(cc.Node.EventType.TOUCH_START, this.onButtonClick, this);
     },
-    onDestroy() {
-        if (this.onTouchEnd) {
-            this.button.node.off(cc.Node.EventType.TOUCH_END, this.onButtonClick, this);
-            return;
-        } 
-        this.button.node.off(cc.Node.EventType.TOUCH_START, this.onButtonClick, this);
-    },
+  
 });
