@@ -15,9 +15,11 @@ cc.Class({
         const itemCount = Object.keys(dataObject).length;
         for (let i = 0; i < itemCount; i++) {
             const itemNode = cc.instantiate(this.itemPrefab);
+            console.log("itemNode",itemNode);
             this.container.addChild(itemNode);
-            
-            const itemScript = itemNode.getComponent("ItemCell");
+            const itemScript = itemNode.getComponent("ItemCell2");
+            console.log("itemScript",itemScript);
+
             const data = dataObject[i];
             if (data) {
                 itemNode.active = true;
