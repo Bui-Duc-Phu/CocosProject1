@@ -6,6 +6,11 @@ cc.Class({
             default: [],
             type: [cc.Prefab], 
         },
+        listChar: {
+            default: [],
+            type: [require('CharItem')]
+        }
+        
     },
     onLoad(){
         this.colisionManager()
@@ -33,9 +38,11 @@ cc.Class({
         let charPrefab = this._randomChar()
         let char = cc.instantiate(charPrefab)
         let charComponent = char.getComponent(charPrefab.data._name)
+        this.listChar.push(charComponent)
         this.node.addChild(char);
         char.setPosition(posison);
         charComponent.onMove();
+        console.log('listChar', this.listChar)
     },
     _getCanvasSize(){
         const canvas = cc.find('Canvas');

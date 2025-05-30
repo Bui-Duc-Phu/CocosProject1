@@ -1,21 +1,44 @@
+
+const EventDriver = require('EventDriver')
+const mEmitter = require('mEmitter')
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        moveSpeed: 2000, // Movement speed in pixels per second
+        moveSpeed: 2000,
+        positionDefault: cc.v2(0, 0),
+        player: {
+            default: null,
+            type: cc.Prefab,
+        },
+        posisonSpawnBullet: {
+            default: null,
+            type: cc.Node,
+        },
+
+        currentPlayer: require('Player')
+
+
     },
 
-    start () {
+
+    onLoad() {
+        this.spawnPlayer()
+    },
+
+    start() {
         // Enable keyboard input
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-        
+
         // Initialize key states
         this.keys = {
             w: false,
             s: false,
             a: false,
-            d: false
+            d: false,
+            j: false
         };
     },
 
@@ -25,7 +48,7 @@ cc.Class({
     },
 
     onKeyDown(event) {
-        switch(event.keyCode) {
+        switch (event.keyCode) {
             case cc.macro.KEY.w:
                 this.keys.w = true;
                 break;
@@ -38,11 +61,16 @@ cc.Class({
             case cc.macro.KEY.d:
                 this.keys.d = true;
                 break;
+            case cc.macro.KEY.j:
+                this.currentPlayer.shootAnim() 
+                this.spawnBullet(); 
+                break;
         }
     },
+    
 
     onKeyUp(event) {
-        switch(event.keyCode) {
+        switch (event.keyCode) {
             case cc.macro.KEY.w:
                 this.keys.w = false;
                 break;
@@ -54,6 +82,9 @@ cc.Class({
                 break;
             case cc.macro.KEY.d:
                 this.keys.d = false;
+                break;
+            case cc.macro.KEY.j:
+                this.keys.j = false;
                 break;
         }
     },
@@ -72,5 +103,27 @@ cc.Class({
         if (this.keys.d) {
             this.node.x += this.moveSpeed * dt;
         }
+        if (this.keys.j) {
+            this.spawnBullet()
+        }
+    },
+    spawnPlayer() {
+        this.positionDefault = cc.v2(270, 350)
+        const player = cc.instantiate(this.player)
+        this.posisonSpawnBullet = player.getChildren()[0]
+        console.log('posisonSpawnBullet', this.posisonSpawnBullet)
+        const playerComponent = player.getComponent('Player')
+        playerComponent.init(Date.now());
+        this.node.addChild(player)
+        const position = this.node.convertToNodeSpaceAR(this.positionDefault)
+        player.setPosition(position)
+        this.currentPlayer = playerComponent
+        console.log('currentPlayer', this.currentPlayer);
+        this.currentPlayer.defaultAnim();
+    },
+    spawnBullet() {
+        let worldPos = this.posisonSpawnBullet.convertToWorldSpaceAR(cc.v2(0, 0));
+        console.log('worldPos', worldPos)
+        mEmitter.instance.emit(EventDriver.PLAYER.ON_SHOOT, worldPos);
     }
 });

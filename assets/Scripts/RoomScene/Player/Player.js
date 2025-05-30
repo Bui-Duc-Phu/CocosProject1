@@ -10,26 +10,22 @@ cc.Class({
         },
         runSpeed: {
             default: 1.0,
-        }
-
-     
+        },
+        id: {
+            default: '',
+            type: cc.String,
+        }   
     },
-
-    onLoad(){
-        this.runAnim()
-    },
-
-
-    runAnim() {
+    shootAnim() {
         this.spine.timeScale = this.runSpeed;
-        this.spine.setAnimation(0, 'aim', true);
-        this.spine.setAnimation(1, 'shoot', true);
-      
+        this.spine.setAnimation(1, 'shoot', false);
     },
-
-
-
-
+    defaultAnim(){
+        this.spine.setAnimation(0, 'idle', true);
+    },
+    init(id){
+        this.id = id
+    },
 
 
      

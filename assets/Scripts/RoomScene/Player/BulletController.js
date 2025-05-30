@@ -1,3 +1,5 @@
+const EventDriver = require('EventDriver')
+const mEmitter = require('mEmitter')
 
 
 cc.Class({
@@ -8,34 +10,30 @@ cc.Class({
             default: null,
             type: cc.Prefab,
         },
-
-     
+        bulletParent: {
+            default: null,
+            type: cc.Node,
+        }
+        
     },
 
     onLoad(){
-        this._shootTimer = 0;
-        this._shootInterval = 0.5;
+        this._registerEvent()
     },
 
-
-    update(){
-        this.createBullet()
+    _createBullet(worldPos) {
+        console.log('createBullet', worldPos)
+        const bullet = cc.instantiate(this.bulletPrefab);
+        const bulletComponent = bullet.getComponent('Bullet');
+        const localPos = this.bulletParent.convertToNodeSpaceAR(worldPos);
+        bullet.setPosition(localPos);
+        this.bulletParent.addChild(bullet);
+        bulletComponent.onMove();
     },
-
-    update(dt) {
-        this._shootTimer += dt;
-        if (this._shootTimer >= this._shootInterval) {
-            this._shootTimer = 0;
-            this.createBullet();
-        }
+    _registerEvent(){
+        mEmitter.instance.registerEvent(EventDriver.PLAYER.ON_SHOOT, this._createBullet.bind(this))
     },
-    
-    createBullet(){
-        let bullet = cc.instantiate(this.bulletPrefab)
-        let bulletComponent = bullet.getComponent('Bullet')
-        this.node.addChild(bullet)
-        bulletComponent.onMove()
-    }
+   
 
 
 });

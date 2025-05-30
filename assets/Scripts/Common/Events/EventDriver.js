@@ -15,6 +15,10 @@ const EventDriver = {
     },
     CHARACTER :{
         ON_HIT: 'ON_HIT',
+        ON_DIE: 'ON_DIE',
+    },
+    PLAYER:{
+        ON_SHOOT: 'ON_SHOOT',
     }
 
 

@@ -15,20 +15,16 @@ cc.Class({
     },
     onLoad(){
         this.id = this.randomId()
-        this.registerEvent()
     },
     randomId(){
         let time = new Date().getTime()
         return time
     },
-    registerEvent(){
-        mEmitter.instance.registerEvent(EventDriver.CHARACTER.ON_HIT,this.onDie.bind(this))
-    },
     onMove() {
         cc.tween(this.node)
             .by(10, { x: -1560 })
             .call(() => {
-                this.node.destroy();
+                this.onDie()  
             })
             .start();
         cc.tween(this.node)
@@ -46,11 +42,11 @@ cc.Class({
             )
             .start();
     },
-    onDie(id){
-        if(this.id == id){
-            this.node.destroy();
-        }
-    }
+    onDie(){
+        mEmitter.instance.emit(EventDriver.CHARACTER.ON_DIE, this.id)
+        this.node.destroy();  
+    },
+  
 
 
 });
