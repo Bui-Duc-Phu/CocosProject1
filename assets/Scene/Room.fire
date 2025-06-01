@@ -593,8 +593,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": -1156.714,
+      "y": -19.773,
       "z": 0
     },
     "_scale": {
@@ -630,7 +630,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Player",
+    "_name": "PlayerController",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2

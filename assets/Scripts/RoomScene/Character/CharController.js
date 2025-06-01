@@ -42,6 +42,7 @@ cc.Class({
         let charPrefab = this._randomChar()
         let char = cc.instantiate(charPrefab)
         let charComponent = char.getComponent(charPrefab.data._name)
+        charComponent._initValue(new Date().getTime())
         this.listChar.push(charComponent)
         this.node.addChild(char);
         char.setPosition(posison);

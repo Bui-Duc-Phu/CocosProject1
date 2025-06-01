@@ -66,13 +66,10 @@ cc.Class({
                 this.node.destroy();
             })
             .start();
-
     },
-
     onClear() {
         this.node.destroy();
     },
-
     onDestroy() {
         if (this.moveTween) {
             this.moveTween.stop();

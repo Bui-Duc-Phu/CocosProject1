@@ -4,8 +4,4 @@ cc.Class({
 
     properties: {
     },
-
-   
- 
-
 });
