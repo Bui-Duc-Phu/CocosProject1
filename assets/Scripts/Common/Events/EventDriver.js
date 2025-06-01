@@ -19,9 +19,6 @@ const EventDriver = {
     },
     PLAYER:{
         ON_SHOOT: 'ON_SHOOT',
-    }
-
-
- 
+    }, 
 };
 module.exports = EventDriver;

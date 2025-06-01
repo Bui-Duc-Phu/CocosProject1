@@ -110,20 +110,17 @@ cc.Class({
     spawnPlayer() {
         this.positionDefault = cc.v2(270, 350)
         const player = cc.instantiate(this.player)
-        this.posisonSpawnBullet = player.getChildren()[0]
-        console.log('posisonSpawnBullet', this.posisonSpawnBullet)
+        this.posisonSpawnBullet = player.children.find(child => child.name === "posisonSpawnBullet");
         const playerComponent = player.getComponent('Player')
         playerComponent.init(Date.now());
         this.node.addChild(player)
         const position = this.node.convertToNodeSpaceAR(this.positionDefault)
         player.setPosition(position)
         this.currentPlayer = playerComponent
-        console.log('currentPlayer', this.currentPlayer);
         this.currentPlayer.defaultAnim();
     },
     spawnBullet() {
         let worldPos = this.posisonSpawnBullet.convertToWorldSpaceAR(cc.v2(0, 0));
-        console.log('worldPos', worldPos)
         mEmitter.instance.emit(EventDriver.PLAYER.ON_SHOOT, worldPos);
     }
 });

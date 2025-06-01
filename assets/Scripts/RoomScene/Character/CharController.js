@@ -1,3 +1,6 @@
+const EventDriver = require('EventDriver')
+const mEmitter = require('mEmitter')
+
 cc.Class({
     extends: cc.Component,
 
@@ -14,6 +17,7 @@ cc.Class({
     },
     onLoad(){
         this.colisionManager()
+        this._registerEvent()
     },
 
     colisionManager(){
@@ -42,7 +46,6 @@ cc.Class({
         this.node.addChild(char);
         char.setPosition(posison);
         charComponent.onMove();
-        console.log('listChar', this.listChar)
     },
     _getCanvasSize(){
         const canvas = cc.find('Canvas');
@@ -63,5 +66,27 @@ cc.Class({
     _getRandomInterval() {
         return Math.random() * 2 + 1;
     },
-    
+    _registerEvent(){
+        mEmitter.instance.registerEvent(EventDriver.CHARACTER.ON_DIE, this._onCharDie.bind(this))
+        mEmitter.instance.registerEvent(EventDriver.CHARACTER.ON_HIT, this._onCharHit.bind(this))
+    },
+    _removeEvent(){
+        mEmitter.instance.removeEvent(EventDriver.CHARACTER.ON_DIE, this._onCharDie.bind(this))
+        mEmitter.instance.removeEvent(EventDriver.CHARACTER.ON_HIT, this._onCharHit.bind(this))
+    },
+    _onCharDie(charId){
+        let char = this.listChar.find(char => char.id === charId)
+        char.onClear()
+        this.listChar = this.listChar.filter(char => char.id !== charId)
+    },
+    _onCharHit(charId){
+        let char = this.listChar.find(char => char.id === charId)
+        if (char) {
+            char.onDie()
+            this.listChar = this.listChar.filter(char => char.id !== charId)
+        }
+    },
+    onDestroy(){
+        this._removeEvent()
+    },
 })

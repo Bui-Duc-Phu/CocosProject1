@@ -1,5 +1,6 @@
 const EventDriver = require('EventDriver')
 const mEmitter = require('mEmitter')
+const CharacterType = require('CharacterType')
 cc.Class({
     extends: cc.Component,
 
@@ -12,41 +13,82 @@ cc.Class({
             default: 0,
             type: cc.String,
         },
+        type: {
+            default: CharacterType.DOG,
+            type: CharacterType,
+        },
     },
-    onLoad(){
+    onLoad() {
         this.id = this.randomId()
     },
-    randomId(){
+    randomId() {
         let time = new Date().getTime()
         return time
     },
     onMove() {
-        cc.tween(this.node)
+        this.moveTween = cc.tween(this.node)
             .by(10, { x: -1560 })
             .call(() => {
-                this.onDie()  
+                mEmitter.instance.emit(EventDriver.CHARACTER.ON_DIE, this.id)
             })
             .start();
-        cc.tween(this.node)
+
+        this.floatTween = cc.tween(this.node)
             .repeatForever(
                 cc.tween()
-                    .to(0.4, { scale: 0.9 })
-                    .to(0.4, { scale: 1 })
-            )
-            .start();
-        cc.tween(this.node)
-            .repeatForever(
-                cc.tween()
-                    .by(0.7, { y : 10 })
-                    .by(0.4, { y: -10 })
+                    .parallel(
+                        cc.tween().sequence(
+                            cc.tween().to(0.4, { scale: 0.9 }),
+                            cc.tween().to(0.4, { scale: 1 })
+                        ),
+                        cc.tween().sequence(
+                            cc.tween().by(0.7, { y: 10 }),
+                            cc.tween().by(0.4, { y: -10 })
+                        )
+                    )
             )
             .start();
     },
-    onDie(){
-        mEmitter.instance.emit(EventDriver.CHARACTER.ON_DIE, this.id)
-        this.node.destroy();  
+    onDie() {
+        if (this.moveTween) {
+            this.moveTween.stop();
+        }
+        if (this.floatTween) {
+            this.floatTween.stop();
+        }
+        const collider = this.node.getComponent(cc.Collider);
+        if (collider) {
+            collider.enabled = false;
+        }
+        this.dieTween = cc.tween(this.node)
+            .to(0.8, { opacity: 0 })
+            .call(() => {
+                this.node.destroy();
+            })
+            .start();
+
     },
-  
+
+    onClear() {
+        this.node.destroy();
+    },
+
+    onDestroy() {
+        if (this.moveTween) {
+            this.moveTween.stop();
+        }
+        if (this.floatTween) {
+            this.floatTween.stop();
+        }
+        if (this.dieTween) {
+            this.dieTween.stop();
+        }
+        this.node.destroy();
+    },
+    _initValue(id){
+        this.id = id
+    },
+
 
 
 });
