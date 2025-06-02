@@ -138,3 +138,67 @@ Size Mode là thuộc tính quyết định cách hiển thị kích thước c�
 | Căn chỉnh | Chính xác theo nội dung | Theo kích thước gốc |
 | Tối ưu không gian | Tốt hơn | Kém hơn |
 | Phù hợp với | UI elements, sprite riêng lẻ | Sprite sheet, atlas, sprite có kích thước cố định |
+
+
+# Design Patterns trong Game Development
+
+## 1. Command Pattern
+**Là gì?**
+- Command Pattern là cách đóng gói một hành động thành một object riêng biệt
+- Mỗi command chứa tất cả thông tin cần thiết để thực hiện hành động đó
+
+**Trong game development:**
+- Xử lý input từ người chơi (di chuyển, tấn công, nhảy)
+- Hệ thống undo/redo trong game (ví dụ: quay lại bước đi trong game cờ)
+- Tạo replay system (ghi lại và phát lại các hành động)
+- Tạo macro commands (tổ hợp nhiều lệnh, ví dụ: combo moves)
+- Queue system cho AI (xếp hàng các hành động của NPC)
+
+## 2. Flyweight Pattern
+**Là gì?**
+- Flyweight Pattern giúp tối ưu bộ nhớ bằng cách chia sẻ dữ liệu chung giữa nhiều objects
+- Tách biệt dữ liệu không thay đổi (intrinsic) và dữ liệu thay đổi (extrinsic)
+
+**Trong game development:**
+- Tạo nhiều NPC cùng loại (ví dụ: đám đông trong game)
+- Tạo nhiều đối tượng giống nhau (ví dụ: cây, đá, mây)
+- Tối ưu bộ nhớ khi có nhiều particle effects
+- Tạo tile-based maps (chia sẻ texture giữa các tile)
+- Tạo nhiều đạn/bullet trong game bắn súng
+
+## 3. Observer Pattern
+**Là gì?**
+- Observer Pattern cho phép một object thông báo cho các objects khác khi có thay đổi
+- Tạo mối quan hệ một-nhiều giữa subject và observers
+
+**Trong game development:**
+- Hệ thống achievement (thông báo khi đạt thành tích)
+- UI updates (cập nhật thanh máu, điểm số)
+- Event system trong game (ví dụ: khi player chết, khi level up)
+- Sound system (phát âm thanh khi có sự kiện)
+- Save system (lưu game khi có thay đổi quan trọng)
+
+## 4. State Pattern
+**Là gì?**
+- State Pattern cho phép một object thay đổi hành vi dựa trên trạng thái hiện tại
+- Mỗi trạng thái được đóng gói trong một class riêng
+
+**Trong game development:**
+- Quản lý trạng thái nhân vật (idle, running, jumping, attacking)
+- Quản lý trạng thái game (menu, playing, paused, game over)
+- AI behavior (patrol, chase, attack, flee)
+- Boss fight phases (different attack patterns)
+- Weapon states (reloading, shooting, empty)
+
+## 5. Singleton Pattern
+**Là gì?**
+- Singleton Pattern đảm bảo một class chỉ có một instance duy nhất
+- Cung cấp điểm truy cập global đến instance đó
+
+**Trong game development:**
+- Game Manager (quản lý trạng thái game, scenes)
+- Audio Manager (quản lý âm thanh, music)
+- Resource Manager (quản lý assets, loading)
+- Save System (lưu/đọc dữ liệu game)
+- Input Manager (xử lý input từ người chơi)
+
