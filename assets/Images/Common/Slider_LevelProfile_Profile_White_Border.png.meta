@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "45c3d2a4-4848-4e8b-8f78-9907b5b27489",
+  "uuid": "f19fb9c1-222b-43db-9a1e-b3bd17666d79",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Slider_LevelProfile_Profile_White_Border": {
       "ver": "1.0.4",
-      "uuid": "7abe788f-5492-4f45-90a8-950b506cbff5",
+      "uuid": "fa06a190-ab13-41ff-a397-3395770bfa54",
       "rawTextureUuid": "45c3d2a4-4848-4e8b-8f78-9907b5b27489",
       "trimType": "auto",
       "trimThreshold": 1,

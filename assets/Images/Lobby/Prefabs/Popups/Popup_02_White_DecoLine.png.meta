@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "b93b8c77-cbd8-4e99-8927-b3892e4b0874",
+  "uuid": "36779733-4abb-426a-a320-2a6e84e63067",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Popup_02_White_DecoLine": {
       "ver": "1.0.4",
-      "uuid": "ddc6da39-0a82-4741-a896-e8728e25ac08",
+      "uuid": "3ea1df42-ad72-49b3-af96-21f50eb061cb",
       "rawTextureUuid": "b93b8c77-cbd8-4e99-8927-b3892e4b0874",
       "trimType": "auto",
       "trimThreshold": 1,

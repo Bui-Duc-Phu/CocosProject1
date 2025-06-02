@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "b57b9030-8b27-4c20-8da6-a05b88948ae4",
+  "uuid": "1015ea54-5fc1-4f2b-8bc9-1a57f9e4fdc7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "ShopItem_Gem_5": {
       "ver": "1.0.4",
-      "uuid": "bd2b7dc7-c24e-4f2f-b8df-ea07c29bcc36",
+      "uuid": "deaadda9-06d0-49e4-9f7d-5ffa81955c66",
       "rawTextureUuid": "b57b9030-8b27-4c20-8da6-a05b88948ae4",
       "trimType": "auto",
       "trimThreshold": 1,

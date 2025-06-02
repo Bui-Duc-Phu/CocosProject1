@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "73526b7d-5200-4c77-b978-9a386ebe76fd",
+  "uuid": "005f38ba-2908-458f-a6de-819933da506c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Slider_Icon_Icon": {
       "ver": "1.0.4",
-      "uuid": "ab15780b-777f-46dd-9792-448ec059c1fe",
+      "uuid": "35435c21-613c-4c29-b80a-0a29acba7399",
       "rawTextureUuid": "73526b7d-5200-4c77-b978-9a386ebe76fd",
       "trimType": "auto",
       "trimThreshold": 1,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "fbaa0002-a373-4184-9650-9a0c130180a4",
+  "uuid": "2f5ae427-43e2-4747-ad46-f572d5a6d482",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "icon_pouch": {
       "ver": "1.0.4",
-      "uuid": "05f54c3c-0f67-48cc-a340-03b873acfef1",
+      "uuid": "da048e98-17bf-459c-a398-f391a71a9177",
       "rawTextureUuid": "fbaa0002-a373-4184-9650-9a0c130180a4",
       "trimType": "auto",
       "trimThreshold": 1,

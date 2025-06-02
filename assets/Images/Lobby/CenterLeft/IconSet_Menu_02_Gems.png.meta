@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "2beb92e6-3bea-4f4f-a593-b5ecdf70f278",
+  "uuid": "c67da193-9e42-4c54-b7ea-c50bbc977745",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "IconSet_Menu_02_Gems": {
       "ver": "1.0.4",
-      "uuid": "f559bcb9-8dd5-4da3-9a40-c86b879ae1f4",
+      "uuid": "73c3e39a-7c61-47fc-aaf4-bc5acb479acd",
       "rawTextureUuid": "2beb92e6-3bea-4f4f-a593-b5ecdf70f278",
       "trimType": "auto",
       "trimThreshold": 1,

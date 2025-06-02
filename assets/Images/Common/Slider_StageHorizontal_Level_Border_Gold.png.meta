@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "bd222b71-4688-4e60-a0f9-2f28e229c4cc",
+  "uuid": "0f98c98f-276f-4004-90b6-6bb00f7bc75a",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Slider_StageHorizontal_Level_Border_Gold": {
       "ver": "1.0.4",
-      "uuid": "c6cbcee8-0ed3-406b-a3b4-48588597774c",
+      "uuid": "40ceae0b-9500-419a-9527-78ccff7a4d68",
       "rawTextureUuid": "bd222b71-4688-4e60-a0f9-2f28e229c4cc",
       "trimType": "auto",
       "trimThreshold": 1,

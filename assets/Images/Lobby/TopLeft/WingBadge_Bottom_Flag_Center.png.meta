@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "a739b818-59f6-4d2f-af75-903a1d3d9aea",
+  "uuid": "cb14d8ab-102f-4221-8ed4-4c51cb983ee4",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "WingBadge_Bottom_Flag_Center": {
       "ver": "1.0.4",
-      "uuid": "311af2f0-41e1-4938-ba37-7f58a80f7c7d",
+      "uuid": "5bd88da3-5430-473c-a2a9-56a6fd6de514",
       "rawTextureUuid": "a739b818-59f6-4d2f-af75-903a1d3d9aea",
       "trimType": "auto",
       "trimThreshold": 1,

@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "1268b494-6b7d-4ec0-a7b4-8b2d579fac5f",
+  "uuid": "ca1a7976-147b-46c6-bf0a-587cf6baba5d",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "MenuIcon_Swords": {
       "ver": "1.0.4",
-      "uuid": "c82f192c-c7b1-4451-afce-880ba0c3d3bc",
+      "uuid": "cd6c9d77-19c3-40aa-90aa-dae6079d8668",
       "rawTextureUuid": "1268b494-6b7d-4ec0-a7b4-8b2d579fac5f",
       "trimType": "auto",
       "trimThreshold": 1,

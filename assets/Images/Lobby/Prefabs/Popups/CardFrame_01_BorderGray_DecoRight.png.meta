@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "cf94af96-19de-4a5e-beab-233e2f92cc64",
+  "uuid": "2f9d4a3a-0090-4261-b753-5b5ebe97f40f",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "CardFrame_01_BorderGray_DecoRight": {
       "ver": "1.0.4",
-      "uuid": "89d5894e-5a7b-44db-868b-73ea7c93847f",
+      "uuid": "57abe8d9-31a3-4b46-a674-3d1f669ccd2c",
       "rawTextureUuid": "cf94af96-19de-4a5e-beab-233e2f92cc64",
       "trimType": "auto",
       "trimThreshold": 1,

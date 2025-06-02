@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "58023479-9840-42db-bf7c-9b901f9279c2",
+  "uuid": "ccdd5dcc-0ff6-4900-9184-c6975e0af4af",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Resource_Icon_Coins": {
       "ver": "1.0.4",
-      "uuid": "ea9e33a2-98d9-497f-8fa5-230f04a4730f",
+      "uuid": "87351388-d9e9-425e-8603-7a2c46f37fb4",
       "rawTextureUuid": "58023479-9840-42db-bf7c-9b901f9279c2",
       "trimType": "auto",
       "trimThreshold": 1,

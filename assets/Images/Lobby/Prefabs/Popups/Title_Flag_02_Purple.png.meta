@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "bfda56f1-e95f-4ec4-81fc-8d46de73283e",
+  "uuid": "45cf00ad-ec6c-42f1-959b-7605496c236c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Title_Flag_02_Purple": {
       "ver": "1.0.4",
-      "uuid": "447b20f2-6d5c-4edb-9f42-7ffdce81434c",
+      "uuid": "51af1fc5-a199-4b8d-86be-aa0862c1aefc",
       "rawTextureUuid": "bfda56f1-e95f-4ec4-81fc-8d46de73283e",
       "trimType": "auto",
       "trimThreshold": 1,

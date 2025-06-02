@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "350b2cb6-331f-4c82-8874-04b724e72b3d",
+  "uuid": "c0a47304-45e7-4335-958b-59c497ec051f",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "icon_calendar": {
       "ver": "1.0.4",
-      "uuid": "9542bd33-fbe3-45d8-a2f4-36db20f51d59",
+      "uuid": "68f99320-065f-48e1-9940-c96fb9fff0b9",
       "rawTextureUuid": "350b2cb6-331f-4c82-8874-04b724e72b3d",
       "trimType": "auto",
       "trimThreshold": 1,

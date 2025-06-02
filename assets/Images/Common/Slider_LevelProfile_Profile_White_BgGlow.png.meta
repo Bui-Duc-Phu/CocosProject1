@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "097cd09b-e3f8-4308-974d-dac2c628df6f",
+  "uuid": "698ea757-c017-4ca9-9ae9-2fbe68a502b1",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Slider_LevelProfile_Profile_White_BgGlow": {
       "ver": "1.0.4",
-      "uuid": "5280176b-6802-4f2a-acaf-153f98e069c8",
+      "uuid": "78c54430-db0b-4bd3-a4f4-0ba3c5bbe25a",
       "rawTextureUuid": "097cd09b-e3f8-4308-974d-dac2c628df6f",
       "trimType": "auto",
       "trimThreshold": 1,

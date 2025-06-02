@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "d092af24-c247-48db-af41-4700cccf01c7",
+  "uuid": "897e5bd1-3ba8-4782-9d26-e3350c761879",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "Popup_01_ButtonIcon": {
       "ver": "1.0.4",
-      "uuid": "fb857462-e30a-47e9-b1d1-253a71422e37",
+      "uuid": "f36babef-5740-49a5-9268-99a0365ffa1b",
       "rawTextureUuid": "d092af24-c247-48db-af41-4700cccf01c7",
       "trimType": "auto",
       "trimThreshold": 1,

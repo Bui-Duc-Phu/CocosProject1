@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "f6b3d187-150a-453e-8e06-621ef7512aef",
+  "uuid": "62acd0a7-038b-4f3b-b09a-d9d2213fbde3",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,7 +11,7 @@
   "subMetas": {
     "StageFrame_05_BgGlow": {
       "ver": "1.0.4",
-      "uuid": "110ed244-1d53-4e07-88e2-10bb274c2788",
+      "uuid": "c982427a-8fa9-4055-a1a2-abf30fdfba95",
       "rawTextureUuid": "f6b3d187-150a-453e-8e06-621ef7512aef",
       "trimType": "auto",
       "trimThreshold": 1,
