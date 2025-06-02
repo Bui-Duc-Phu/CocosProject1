@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "21f398ee-d338-4416-bf32-10916c155298",
+  "uuid": "e9a570f2-0600-409d-81fe-77ba0c37f104",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -9,10 +9,10 @@
   "packable": true,
   "platformSettings": {},
   "subMetas": {
-    "Character_Sample_09": {
+    "Dragon": {
       "ver": "1.0.4",
-      "uuid": "03d34ef1-b6ee-4a66-ab50-802a748a38ea",
-      "rawTextureUuid": "21f398ee-d338-4416-bf32-10916c155298",
+      "uuid": "e1d7d405-da2d-42e1-9630-7eb37052e479",
+      "rawTextureUuid": "e9a570f2-0600-409d-81fe-77ba0c37f104",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -20,10 +20,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 232,
-      "height": 193,
-      "rawWidth": 232,
-      "rawHeight": 193,
+      "width": 641,
+      "height": 381,
+      "rawWidth": 641,
+      "rawHeight": 381,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

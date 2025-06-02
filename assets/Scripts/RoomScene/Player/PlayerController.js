@@ -28,11 +28,8 @@ cc.Class({
     },
 
     start() {
-        // Enable keyboard input
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-
-        // Initialize key states
         this.keys = {
             w: false,
             s: false,
@@ -41,12 +38,10 @@ cc.Class({
             j: false
         };
     },
-
     onDestroy() {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
-
     onKeyDown(event) {
         switch (event.keyCode) {
             case cc.macro.KEY.w:
@@ -103,9 +98,6 @@ cc.Class({
         if (this.keys.d) {
             this.node.x += this.moveSpeed * dt;
         }
-        if (this.keys.j) {
-            this.spawnBullet()
-        }
     },
     spawnPlayer() {
         this.positionDefault = cc.v2(270, 350)
@@ -122,5 +114,7 @@ cc.Class({
     spawnBullet() {
         let worldPos = this.posisonSpawnBullet.convertToWorldSpaceAR(cc.v2(0, 0));
         mEmitter.instance.emit(EventDriver.PLAYER.ON_SHOOT, worldPos);
-    }
+    },
+     
+     
 });

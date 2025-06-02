@@ -14,16 +14,45 @@ cc.Class({
             type: cc.String,
         },
         type: {
-            default: CharacterType.DOG,
+            default: null,
             type: CharacterType,
+        },
+        hpProgress: {
+            default: null,
+            type: cc.ProgressBar,
+        },
+        sprite: {
+            default: null,
+            type: cc.Sprite,
         },
     },
     onLoad() {
-        this.id = this.randomId()
+       
+    },
+    init(charTypeConfig) {
+        this.type = charTypeConfig
+        this.hpMax = charTypeConfig.hp
+        this.updateHp(this.hpMax)
+        
+        if (charTypeConfig.sprite instanceof cc.SpriteFrame) {
+            this.sprite.spriteFrame = charTypeConfig.sprite
+        } else {
+            cc.loader.load(charTypeConfig.sprite, (err, texture) => {
+                if (err) {
+                    cc.error('Failed to load sprite:', err)
+                    return
+                }
+                const spriteFrame = new cc.SpriteFrame(texture)
+                this.sprite.spriteFrame = spriteFrame
+            })
+        }
     },
     randomId() {
         let time = new Date().getTime()
         return time
+    },
+    updateHp(hp){
+        this.hpProgress.progress = hp / this.hpMax
     },
     onMove() {
         this.moveTween = cc.tween(this.node)

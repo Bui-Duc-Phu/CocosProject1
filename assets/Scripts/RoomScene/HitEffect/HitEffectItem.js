@@ -13,8 +13,11 @@ cc.Class({
         this.tween.parallel(
             cc.tween().to(0.3, { scale: 1.5 },{easing: cc.easing.sineOut()}),
             cc.tween().to(0.3, { opacity: 0 },{easing: cc.easing.quadIn()})
-        )        
-        this.tween.start()
+        )
+        .call(() => {
+            this.node.destroy()
+        })
+        .start()
     },
     onDestroy() {
         if (this.tween) {

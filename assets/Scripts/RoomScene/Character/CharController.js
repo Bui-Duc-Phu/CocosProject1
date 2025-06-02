@@ -1,6 +1,6 @@
 const EventDriver = require('EventDriver')
 const mEmitter = require('mEmitter')
-
+const CharacterType = require('CharacterType')
 cc.Class({
     extends: cc.Component,
 
@@ -8,6 +8,10 @@ cc.Class({
         charPrefabs: {
             default: [],
             type: [cc.Prefab], 
+        },
+        charItemPrefab:{
+            default: null,
+            type: cc.Prefab,
         },
         listChar: {
             default: [],
@@ -19,13 +23,17 @@ cc.Class({
         this.colisionManager()
         this._registerEvent()
     },
-
+    randomTypeChar(){
+        let rand = Math.floor(Math.random()*Object.keys(CharacterType).length)
+        return CharacterType[Object.keys(CharacterType)[rand]]
+    },
     colisionManager(){
         let manager = cc.director.getCollisionManager();
         manager.enabled = true
      
     },
     start() {
+        console.log("type char",this.randomTypeChar())
         this._spawnInterval = this._getRandomInterval();
         this._spawnTimer = 0;
     },
@@ -36,6 +44,21 @@ cc.Class({
             this._spawnTimer = 0;
             this._spawnInterval = this._getRandomInterval(); 
         }
+    },
+    _createCharByType(){
+        let typeChar = this.randomTypeChar()
+        let char = cc.instantiate(this.charItemPrefab)
+        let charComponent = char.getComponent("CharItem")
+
+        charComponent.init(typeChar)
+        charComponent._initValue(new Date().getTime())
+        charComponent.onMove();
+
+        let posison = this._randomPosition()
+        char.setPosition(posison);
+        this.node.addChild(char);
+
+        this.listChar.push(charComponent)
     },
     _createChar(){
         let posison = this._randomPosition()
