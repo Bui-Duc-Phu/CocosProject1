@@ -28,11 +28,8 @@ cc.Class({
     },
 
     start() {
-        // Enable keyboard input
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-
-        // Initialize key states
         this.keys = {
             w: false,
             s: false,
@@ -41,12 +38,10 @@ cc.Class({
             j: false
         };
     },
-
     onDestroy() {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
-
     onKeyDown(event) {
         switch (event.keyCode) {
             case cc.macro.KEY.w:
@@ -103,27 +98,23 @@ cc.Class({
         if (this.keys.d) {
             this.node.x += this.moveSpeed * dt;
         }
-        if (this.keys.j) {
-            this.spawnBullet()
-        }
     },
     spawnPlayer() {
         this.positionDefault = cc.v2(270, 350)
         const player = cc.instantiate(this.player)
-        this.posisonSpawnBullet = player.getChildren()[0]
-        console.log('posisonSpawnBullet', this.posisonSpawnBullet)
+        this.posisonSpawnBullet = player.children.find(child => child.name === "posisonSpawnBullet");
         const playerComponent = player.getComponent('Player')
         playerComponent.init(Date.now());
         this.node.addChild(player)
         const position = this.node.convertToNodeSpaceAR(this.positionDefault)
         player.setPosition(position)
         this.currentPlayer = playerComponent
-        console.log('currentPlayer', this.currentPlayer);
         this.currentPlayer.defaultAnim();
     },
     spawnBullet() {
         let worldPos = this.posisonSpawnBullet.convertToWorldSpaceAR(cc.v2(0, 0));
-        console.log('worldPos', worldPos)
         mEmitter.instance.emit(EventDriver.PLAYER.ON_SHOOT, worldPos);
-    }
+    },
+     
+     
 });

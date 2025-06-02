@@ -10,30 +10,30 @@ cc.Class({
             default: null,
             type: cc.Prefab,
         },
-        bulletParent: {
-            default: null,
-            type: cc.Node,
-        }
-        
     },
-
     onLoad(){
         this._registerEvent()
+        this._initValue()
     },
-
+    _initValue(){
+        this.ListBullet = []
+    },
     _createBullet(worldPos) {
-        console.log('createBullet', worldPos)
         const bullet = cc.instantiate(this.bulletPrefab);
         const bulletComponent = bullet.getComponent('Bullet');
-        const localPos = this.bulletParent.convertToNodeSpaceAR(worldPos);
+        const localPos = this.node.convertToNodeSpaceAR(worldPos);
         bullet.setPosition(localPos);
-        this.bulletParent.addChild(bullet);
+        this.node.addChild(bullet);
         bulletComponent.onMove();
+        console.log('ListBullet', this.ListBullet)
     },
     _registerEvent(){
-        mEmitter.instance.registerEvent(EventDriver.PLAYER.ON_SHOOT, this._createBullet.bind(this))
+       mEmitter.instance.registerEvent(EventDriver.PLAYER.ON_SHOOT, this._createBullet.bind(this))
     },
-   
-
-
+    _removeEvent(){
+        mEmitter.instance.removeEvent(EventDriver.PLAYER.ON_SHOOT, this._createBullet.bind(this))
+    },
+    onDestroy(){
+        this._removeEvent()
+    },
 });

@@ -18,10 +18,17 @@ cc.Class({
     },
     shootAnim() {
         this.spine.timeScale = this.runSpeed;
-        this.spine.setAnimation(1, 'shoot', false);
+        this.spine.setAnimation(2, 'shoot', false);
     },
     defaultAnim(){
-        this.spine.setAnimation(0, 'idle', true);
+        this.spine.setAnimation(0, 'idle', true); 
+    },
+
+    runAnim(){
+        this.spine.setAnimation(1, 'run', true);
+    },
+    stopAnim(){
+        this.spine.setAnimation(1, 'idle', true);
     },
     init(id){
         this.id = id

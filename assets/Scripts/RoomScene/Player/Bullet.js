@@ -10,19 +10,20 @@ cc.Class({
     onLoad(){
         let manager = cc.director.getCollisionManager();
         manager.enabled = true
-        
     },
     onCollisionEnter: function (other, self) {
-        console.log('on collision enter');
-        console.log(other.node.getComponent('CharItem').id)
-        mEmitter.instance.emit(EventDriver.CHARACTER.ON_HIT, other.node.getComponent('CharItem').id)
+        this.node.destroy();
+        mEmitter.instance.emit(EventDriver.CHARACTER.ON_HIT, other.node.getComponent('CharItem').id,self.node.getPosition())
     },
     onMove(){
-        cc.tween(this.node)
-        .by(1.5, {x: 3000})
+        this.tween = cc.tween(this.node)
+       this.tween.by(1.5, {x: 3000})
         .call(() => {
             this.node.destroy();
         })
         .start();
+    },
+    onDestroy(){
+        this.tween.stop()
     }
 });
