@@ -1,0 +1,11 @@
+{
+  "name": "CocosProject1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Bui-Duc-Phu/CocosProject1.git",
+  "author": "Bui-Duc-Phu <buiphu05012002@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "events": "^3.3.0"
+  }
+}

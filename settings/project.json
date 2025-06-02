@@ -3,6 +3,16 @@
   "collision-matrix": [
     [
       true
+    ],
+    [
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      false
     ]
   ],
   "design-resolution-height": 720,
@@ -18,10 +28,12 @@
       "enable": false
     }
   },
-  "fit-height": false,
-  "fit-width": false,
+  "fit-height": true,
+  "fit-width": true,
   "group-list": [
-    "default"
+    "default",
+    "Character",
+    "Bullet"
   ],
   "last-module-event-record-time": 1747638720911,
   "simulator-orientation": false,
