@@ -1,6 +1,7 @@
 const EventDriver = require('EventDriver')
 const mEmitter = require('mEmitter')
 const CharacterType = require('CharacterType')
+const StateMachine = require('javascript-state-machine')
 cc.Class({
     extends: cc.Component,
 
@@ -27,7 +28,29 @@ cc.Class({
         },
     },
     onLoad() {
+        this._initStateMachine()
        
+    },
+    _initStateMachine() {
+        this.fsm = new StateMachine({
+            init: 'init',
+            transitions: [
+                { name: 'startMoving', from: 'init', to: 'move' },
+                { name: 'die', from: ['init', 'move'], to: 'die' },
+                { name: 'reset', from: '*', to: 'init' },
+            ],
+            methods: {
+                onEnterInit: (id) => {
+                    this._initValue(id)
+                },
+                onEnterMove: () => {
+                    this.onMove()
+                },
+                onEnterDie: () => {
+                    this.onDie()
+                },
+            }
+        })
     },
     init(charTypeConfig) {
         this.type = charTypeConfig
@@ -113,6 +136,23 @@ cc.Class({
     },
     _initValue(id){
         this.id = id
+    },
+    initState(id){
+        if (!this.fsm) {
+            this._initStateMachine();
+        }
+        this._initValue(id);
+    },
+    startMoveState() {
+        if (this.fsm.can('startMoving')) {
+            this.fsm.startMoving()
+        }
+    },
+
+    dieState() {
+        if (this.fsm.can('die')) {
+            this.fsm.die()
+        }
     },
 
 

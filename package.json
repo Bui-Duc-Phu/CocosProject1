@@ -6,6 +6,7 @@
   "author": "Bui-Duc-Phu <buiphu05012002@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "events": "^3.3.0"
+    "events": "^3.3.0",
+    "javascript-state-machine": "^3.1.0"
   }
 }
