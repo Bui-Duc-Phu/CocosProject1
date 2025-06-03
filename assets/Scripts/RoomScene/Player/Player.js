@@ -27,9 +27,6 @@ cc.Class({
     runAnim(){
         this.spine.setAnimation(1, 'run', true);
     },
-    stopAnim(){
-        this.spine.setAnimation(1, 'idle', true);
-    },
     init(id){
         this.id = id
     },

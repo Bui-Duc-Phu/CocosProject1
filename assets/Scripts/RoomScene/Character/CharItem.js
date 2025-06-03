@@ -13,10 +13,17 @@ cc.Class({
         id: {
             default: 0,
             type: cc.String,
+            visible: false,
         },
         type: {
             default: null,
-            type: CharacterType,
+            type: String,
+            visible: false,
+        },
+        hp: {
+            default: 1,
+            type: cc.Float,
+            visible: false,
         },
         hpProgress: {
             default: null,
@@ -29,7 +36,7 @@ cc.Class({
     },
     onLoad() {
         this._initStateMachine()
-       
+    
     },
     _initStateMachine() {
         this.fsm = new StateMachine({
@@ -40,8 +47,8 @@ cc.Class({
                 { name: 'reset', from: '*', to: 'init' },
             ],
             methods: {
-                onEnterInit: (id) => {
-                    this._initValue(id)
+                onEnterInit: (cha) => {
+
                 },
                 onEnterMove: () => {
                     this.onMove()
@@ -52,30 +59,19 @@ cc.Class({
             }
         })
     },
-    init(charTypeConfig) {
-        this.type = charTypeConfig
-        this.hpMax = charTypeConfig.hp
-        this.updateHp(this.hpMax)
-        
-        if (charTypeConfig.sprite instanceof cc.SpriteFrame) {
-            this.sprite.spriteFrame = charTypeConfig.sprite
-        } else {
-            cc.loader.load(charTypeConfig.sprite, (err, texture) => {
-                if (err) {
-                    cc.error('Failed to load sprite:', err)
-                    return
-                }
-                const spriteFrame = new cc.SpriteFrame(texture)
-                this.sprite.spriteFrame = spriteFrame
-            })
-        }
+    init(charType,id) {
+        this.id = id
+        this.type = charType.type
+        this.hp = charType.hp
+        this.sprite.spriteFrame = charType.spriteFrame
+        this.updateHp(1)
     },
     randomId() {
         let time = new Date().getTime()
         return time
     },
-    updateHp(hp){
-        this.hpProgress.progress = hp / this.hpMax
+    updateHp(progress){
+        this.hpProgress.progress = progress
     },
     onMove() {
         this.moveTween = cc.tween(this.node)
@@ -84,7 +80,6 @@ cc.Class({
                 mEmitter.instance.emit(EventDriver.CHARACTER.ON_DIE, this.id)
             })
             .start();
-
         this.floatTween = cc.tween(this.node)
             .repeatForever(
                 cc.tween()
@@ -134,21 +129,11 @@ cc.Class({
         }
         this.node.destroy();
     },
-    _initValue(id){
-        this.id = id
-    },
-    initState(id){
-        if (!this.fsm) {
-            this._initStateMachine();
-        }
-        this._initValue(id);
-    },
     startMoveState() {
         if (this.fsm.can('startMoving')) {
             this.fsm.startMoving()
         }
     },
-
     dieState() {
         if (this.fsm.can('die')) {
             this.fsm.die()

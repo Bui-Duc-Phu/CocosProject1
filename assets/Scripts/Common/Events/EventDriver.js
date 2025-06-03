@@ -20,5 +20,8 @@ const EventDriver = {
     PLAYER:{
         ON_SHOOT: 'ON_SHOOT',
     }, 
+    BULLET:{
+        ON_CLEAR: 'ON_CLEAR',
+    },
 };
 module.exports = EventDriver;

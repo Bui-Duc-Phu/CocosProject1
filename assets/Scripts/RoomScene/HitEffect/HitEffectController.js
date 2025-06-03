@@ -13,7 +13,7 @@ cc.Class({
     _initValue(){
         this.ListHitEffect = []
      },
-    _createHitEffect(charId,posWorld){
+    _createHitEffect(char,posWorld,bullet){
         const pos = this.node.convertToNodeSpaceAR(posWorld)
         const hitEffect = cc.instantiate(this.hitEffectPrefab)
         const hitEffectItem =  hitEffect.getComponent('HitEffectItem')
