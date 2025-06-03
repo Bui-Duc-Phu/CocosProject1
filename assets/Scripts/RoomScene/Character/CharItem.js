@@ -47,7 +47,7 @@ cc.Class({
                 { name: 'reset', from: '*', to: 'init' },
             ],
             methods: {
-                onEnterInit: (cha) => {
+                onEnterInit: () => {
 
                 },
                 onEnterMove: () => {

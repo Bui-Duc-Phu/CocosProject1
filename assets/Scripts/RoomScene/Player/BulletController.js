@@ -10,6 +10,7 @@ cc.Class({
             default: null,
             type: cc.Prefab,
         },
+      
     },
 
     onLoad(){

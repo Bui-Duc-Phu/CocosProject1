@@ -16,6 +16,11 @@ cc.Class({
             type: [require('CharItem')],
             visible: false,
         },
+        isStartGame: {
+            default: false,
+            type: cc.Boolean,
+            visible: false,
+        },
         charAssets: require('CharAssets'),
     },
 
@@ -29,6 +34,7 @@ cc.Class({
     },
 
     update(dt) {
+        if(!this.isStartGame) return
         this.updateSpawnTimer(dt)
     },
 
@@ -86,11 +92,8 @@ cc.Class({
         const charComponent = char.getComponent("CharItem")
         const spriteFrame = this.getCharacterSpriteFrame(typeChar)
         const characterData = this.prepareCharacterData(typeChar, spriteFrame)
-        
-        charComponent.init(characterData,this.generateCharId())
-        
+        charComponent.init(characterData,this.generateCharId())        
         charComponent.onMove()
-        
         return charComponent
     },
 
@@ -149,13 +152,17 @@ cc.Class({
     registerEvents(){
         mEmitter.instance.registerEvent(EventDriver.CHARACTER.ON_DIE, this.onCharDie.bind(this))
         mEmitter.instance.registerEvent(EventDriver.CHARACTER.ON_HIT, this.onCharHit.bind(this))
+        mEmitter.instance.registerEvent(EventDriver.GAME.ON_START, this.onStartGame.bind(this))
     },
-
     removeEvents(){
         mEmitter.instance.removeEvent(EventDriver.CHARACTER.ON_DIE, this.onCharDie.bind(this))
         mEmitter.instance.removeEvent(EventDriver.CHARACTER.ON_HIT, this.onCharHit.bind(this))
+        mEmitter.instance.removeEvent(EventDriver.GAME.ON_START, this.onStartGame.bind(this))
     },
-
+    onStartGame(){
+        console.log('onStartGame')
+        this.isStartGame = true
+    },
     // === CHARACTER MANAGEMENT ===
     onCharDie(charId){
         const char = this.findCharacterById(charId)

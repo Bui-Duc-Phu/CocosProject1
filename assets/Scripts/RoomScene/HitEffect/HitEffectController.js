@@ -4,7 +4,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        _hitEffectPrefab: cc.Prefab,
+        hitEffectPrefab: {
+            default: null,
+            type: cc.Prefab,
+        },
     },
 
     onLoad() {
@@ -22,8 +25,9 @@ cc.Class({
 
     _createHitEffect(char, posWorld, bullet) {
         const pos = this.node.convertToNodeSpaceAR(posWorld)
-        const hitEffect = cc.instantiate(this._hitEffectPrefab)
+        const hitEffect = cc.instantiate(this.hitEffectPrefab)
         const hitEffectItem = hitEffect.getComponent('HitEffectItem')
+        hitEffectItem.init()
         this._listHitEffect.push(hitEffectItem)
         hitEffect.setParent(this.node)
         hitEffect.setPosition(pos)

@@ -1,10 +1,10 @@
 
-
+const EventDriver = require('EventDriver')
+const mEmitter = require('mEmitter')
 cc.Class({
     extends: cc.Component,
 
     properties: {
-
     },
 
     onLoad(){
