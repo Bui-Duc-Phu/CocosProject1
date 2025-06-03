@@ -65,11 +65,11 @@ cc.Class({
         let charPrefab = this._randomChar()
         let char = cc.instantiate(charPrefab)
         let charComponent = char.getComponent(charPrefab.data._name)
-        charComponent._initValue(new Date().getTime())
+        charComponent.initState(new Date().getTime())
         this.listChar.push(charComponent)
         this.node.addChild(char);
         char.setPosition(posison);
-        charComponent.onMove();
+        charComponent.startMoveState()
     },
     _getCanvasSize(){
         const canvas = cc.find('Canvas');
@@ -106,7 +106,7 @@ cc.Class({
     _onCharHit(charId){
         let char = this.listChar.find(char => char.id === charId)
         if (char) {
-            char.onDie()
+            char.dieState()
             this.listChar = this.listChar.filter(char => char.id !== charId)
         }
     },
