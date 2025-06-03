@@ -19,8 +19,7 @@ cc.Class({
         manager.enabled = true
     },
     onCollisionEnter: function (other, self) {
-        mEmitter.instance.emit(EventDriver.CHARACTER.ON_HIT, other.node.getComponent('CharItem'), self.node.getPosition(),self.node.getComponent('Bullet'))
-        
+        mEmitter.instance.emit(EventDriver.CHARACTER.ON_HIT, other.node.getComponent('CharItem').id, self.node.getPosition(),self.node.getComponent('Bullet'))
     },
     onMove() {
         this.tween = cc.tween(this.node)
