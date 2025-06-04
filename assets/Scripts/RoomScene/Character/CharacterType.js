@@ -1,22 +1,22 @@
 
 const CharacterType = {
     DOG:{
-        type: "Dog",
+        type: "DOG",
         speed: 100,
-        hp: 40,
-        sprite: 'assets/Images/Room/Dog.png',
+        hp: 10,
+        spriteFrame: null,
     },
     INFERNO_DOG:{
-        type: "InfernoDog",
+        type: "INFERNO_DOG",
         speed: 100,
-        hp: 40,
-        sprite: 'assets/Images/Room/InfernoDog.png',
+        hp: 20,
+        spriteFrame: null,
     },
     DRAGON:{
-        type: "Dragon",
+        type: "DRAGON",
         speed: 100,
-        hp: 40,
-        sprite: 'assets/Images/Room/Dragon.png',
+        hp: 15,
+        spriteFrame: null,
     },
 }
 

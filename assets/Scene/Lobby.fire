@@ -162,7 +162,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 420.0223208354528
+      "z": 610.5367650289071
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -3236,6 +3236,9 @@
       "__id__": 10
     },
     "_enabled": true,
+    "tableController": {
+      "__id__": 88
+    },
     "_id": "25X/yb4JpPIoYdMXm6OEA1"
   },
   {

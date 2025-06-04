@@ -16,10 +16,7 @@ cc.Class({
             default: null,
             type: cc.Node,
         },
-
         currentPlayer: require('Player')
-
-
     },
 
 
@@ -109,12 +106,19 @@ cc.Class({
         const position = this.node.convertToNodeSpaceAR(this.positionDefault)
         player.setPosition(position)
         this.currentPlayer = playerComponent
-        this.currentPlayer.defaultAnim();
+        this.currentPlayer.portalAnim();
     },
     spawnBullet() {
         let worldPos = this.posisonSpawnBullet.convertToWorldSpaceAR(cc.v2(0, 0));
         mEmitter.instance.emit(EventDriver.PLAYER.ON_SHOOT, worldPos);
     },
+    registerEvents(){
+     
+    },
+    removeEvents(){
+      
+    },
+
      
      
 });

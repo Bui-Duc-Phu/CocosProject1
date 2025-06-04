@@ -1,4 +1,5 @@
-
+const EventDriver = require('EventDriver')
+const mEmitter = require('mEmitter')
 
 cc.Class({
     extends: cc.Component,
@@ -20,18 +21,25 @@ cc.Class({
         this.spine.timeScale = this.runSpeed;
         this.spine.setAnimation(2, 'shoot', false);
     },
-    defaultAnim(){
+    defaultAnim(){ 
         this.spine.setAnimation(0, 'idle', true); 
     },
-
     runAnim(){
-        this.spine.setAnimation(1, 'run', true);
+        this.spine.setAnimation(1, 'run', false);
     },
-    stopAnim(){
-        this.spine.setAnimation(1, 'idle', true);
+    portalAnim(){
+        this.spine.setAnimation(0, 'portal', false);      
+        this.spine.addAnimation(0, 'idle', true)
+        this.spine.setCompleteListener(() => {
+            mEmitter.instance.emit(EventDriver.GAME.ON_START)
+        })         
     },
+    deathAnim(){
+        this.spine.setAnimation(4, 'death', false);
+    },
+
     init(id){
-        this.id = id
+        this.id = id;
     },
 
 

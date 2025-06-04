@@ -444,6 +444,7 @@
     "speed": 150,
     "id": 0,
     "type": null,
+    "hp": 1,
     "hpProgress": {
       "__id__": 10
     },
